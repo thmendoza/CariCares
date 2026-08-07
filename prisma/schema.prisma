@@ -1,0 +1,454 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+// URL is configured in prisma.config.ts
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Enums ────────────────────────────────────────────────────────────────────
+
+enum Role {
+  TEACHER
+  ACADEMIC_COORDINATOR
+  SCHOOL_ADMIN
+  THERAPIST
+}
+
+enum AdminTitle {
+  VP
+  PRINCIPAL
+  SCHOOL_DIRECTOR
+}
+
+enum AccountStatus {
+  PENDING_APPROVAL
+  ACTIVE
+  SUSPENDED
+}
+
+enum Program {
+  FULL_INCLUSION_NO_SERVICES
+  FULL_INCLUSION_SHADOW
+  PARTIAL_INCLUSION_PULLOUT
+  PARTIAL_INCLUSION_INTENSIVE
+  PRE_VOCATIONAL
+  EARLY_CHILDHOOD
+}
+
+enum ProgramConfidence {
+  INFERRED
+  CONFIRMED
+}
+
+enum TherapistStatus {
+  NONE
+  IN_HOUSE
+  EXTERNAL
+}
+
+enum IepStatus {
+  DRAFT
+  SUBMITTED
+  IN_REVIEW
+  REVISIONS_NEEDED
+  COORDINATOR_APPROVED
+  ADMIN_APPROVED
+  APPROVED
+}
+
+enum SectionType {
+  STUDENT_PARENT_INFO
+  BACKGROUND_HISTORY
+  PRESENT_LEVEL_OF_PERFORMANCE
+  ANNUAL_GOALS
+  QUARTERLY_ACADEMIC_GOALS
+  ACCOMMODATIONS
+  MODIFICATIONS
+  RECOMMENDATIONS_AND_CONSENT
+}
+
+enum FlagSeverity {
+  CRITICAL
+  MAJOR
+  MINOR
+  SUGGESTION
+}
+
+enum ReviewLayer {
+  STUDENT_UNDERSTANDING
+  DEVELOPMENTAL_ASSESSMENT
+  GOAL_QUALITY
+  INTERVENTION_ALIGNMENT
+  OVERALL_CONSISTENCY
+}
+
+enum LayerStatus {
+  PASS
+  NEEDS_REVIEW
+  FAIL
+}
+
+enum IepReadiness {
+  READY
+  NEEDS_REVISION
+  HIGH_RISK_OF_OMISSION
+}
+
+enum FlagStatus {
+  PENDING_COORDINATOR
+  VISIBLE_TO_TEACHER
+  DISMISSED
+  RESOLVED
+}
+
+// Milestone 3 — a teacher's own review decision on a flag, separate from the
+// coordinator's approve/dismiss decision (different actor, different meaning,
+// kept as its own fields on AiFlag for auditability — see AiFlag below).
+enum TeacherDecision {
+  ACCEPTED
+  REJECTED
+  EDITED
+}
+
+enum CommentStatus {
+  OPEN
+  RESOLVED
+}
+
+enum ActionType {
+  UPLOAD
+  PARSE_COMPLETE
+  AI_REVIEW_COMPLETE
+  FLAG_APPROVED
+  FLAG_DISMISSED
+  COMMENT_ADDED
+  COMMENT_REPLIED
+  COMMENT_RESOLVED
+  COORDINATOR_APPROVAL
+  ADMIN_APPROVAL
+  FINAL_APPROVED
+  STATUS_CHANGED
+  PROGRAM_CONFIRMED
+  USER_APPROVED
+  USER_SUSPENDED
+}
+
+// ─── Auth.js Adapter Models ───────────────────────────────────────────────────
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ─── Users ────────────────────────────────────────────────────────────────────
+
+model User {
+  id            String        @id @default(cuid())
+  name          String?
+  email         String        @unique
+  emailVerified DateTime?
+  image         String?
+  role          Role?
+  adminTitle    AdminTitle?
+  accountStatus AccountStatus @default(PENDING_APPROVAL)
+  approvedById  String?
+  approvedAt    DateTime?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  password      String?
+
+  approvedBy    User?          @relation("UserApprovals", fields: [approvedById], references: [id])
+  approvedUsers User[]         @relation("UserApprovals")
+
+  accounts      Account[]
+  sessions      Session[]
+
+  teacherStudents  StudentTeacher[]
+  comments         Comment[]
+  commentReplies   CommentReply[]
+  actionHistory    ActionHistory[]
+  flagDecisions    AiFlag[]        @relation("FlagDecision")
+  teacherFlagDecisions AiFlag[]    @relation("TeacherFlagDecision")
+  approvals        Approval[]
+  uploadedIeps     Iep[]
+  programConfirmed Student[]       @relation("ProgramConfirmation")
+
+  @@index([email])
+  @@index([role, accountStatus])
+}
+
+// ─── Students ─────────────────────────────────────────────────────────────────
+
+model Student {
+  id                   String            @id @default(cuid())
+  firstName            String
+  lastName             String
+  dateOfBirth          DateTime?
+  program              Program?
+  programConfidence    ProgramConfidence @default(INFERRED)
+  programConfirmedById String?
+  programConfirmedAt   DateTime?
+  therapistStatus      TherapistStatus   @default(NONE)
+  therapistNotes       String?           @db.Text
+  enrolledGradeLevel   String?
+  isActive             Boolean           @default(true)
+  createdAt            DateTime          @default(now())
+  updatedAt            DateTime          @updatedAt
+
+  programConfirmedBy User?                 @relation("ProgramConfirmation", fields: [programConfirmedById], references: [id])
+  teachers           StudentTeacher[]
+  ieps               Iep[]
+  subjectLevels      StudentSubjectLevel[]
+
+  @@index([lastName, firstName])
+}
+
+// ─── Per-subject instructional grade level ─────────────────────────────────────
+// Some pull-out students are enrolled at one grade level but instructed at a
+// different level for specific subjects (e.g. enrolled Grade 5, Math at Grade 4
+// level). Tracked separately from `enrolledGradeLevel` so AI review can judge
+// each subject's goals against the right level.
+model StudentSubjectLevel {
+  id         String   @id @default(cuid())
+  studentId  String
+  subject    String
+  gradeLevel String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, subject])
+  @@index([studentId])
+}
+
+model StudentTeacher {
+  studentId  String
+  userId     String
+  assignedAt DateTime @default(now())
+
+  student Student @relation(fields: [studentId], references: [id])
+  user    User    @relation(fields: [userId], references: [id])
+
+  @@id([studentId, userId])
+}
+
+// ─── IEPs ─────────────────────────────────────────────────────────────────────
+
+model Iep {
+  id               String        @id @default(cuid())
+  studentId        String
+  version          Int           @default(1)
+  quarter          Int
+  schoolYear       String
+  status           IepStatus     @default(DRAFT)
+  overallReadiness IepReadiness?
+  storageKey       String
+  uploadedById     String
+  uploadedAt       DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  student      Student              @relation(fields: [studentId], references: [id])
+  uploadedBy   User                 @relation(fields: [uploadedById], references: [id])
+  sections     IepSection[]
+  aiFlags      AiFlag[]
+  comments     Comment[]
+  approvals    Approval[]
+  actionHistory ActionHistory[]
+  layerFindings ReviewLayerFinding[]
+
+  @@unique([studentId, schoolYear, quarter, version])
+  @@index([studentId, status])
+}
+
+// ─── IEP Sections ─────────────────────────────────────────────────────────────
+
+model IepSection {
+  id                    String      @id @default(cuid())
+  iepId                 String
+  sectionType           SectionType
+  order                 Int
+  title                 String
+  rawHtml               String      @db.Text
+  plainText             String      @db.Text
+  contentHash           String
+  structuredData        Json?
+  changedFromPrevVersion Boolean    @default(false)
+  createdAt             DateTime    @default(now())
+
+  iep      Iep       @relation(fields: [iepId], references: [id], onDelete: Cascade)
+  aiFlags  AiFlag[]
+  comments Comment[]
+
+  @@unique([iepId, sectionType])
+  @@index([iepId])
+}
+
+// ─── AI Flags ─────────────────────────────────────────────────────────────────
+
+model AiFlag {
+  id              String       @id @default(cuid())
+  iepId           String
+  sectionId       String
+  severity        FlagSeverity
+  layer           ReviewLayer
+  status          FlagStatus
+  category        String
+  highlightStart  Int
+  highlightEnd    Int
+  highlightText   String       @db.Text
+  recommendation  String       @db.Text
+  suggestedText   String?      @db.Text
+  coordinatorNote String?      @db.Text
+  decidedById     String?
+  decidedAt       DateTime?
+  createdAt       DateTime     @default(now())
+
+  // Milestone 3 — the TEACHER's own review decision, kept fully separate
+  // from decidedById/decidedAt above (the coordinator's approve/dismiss).
+  // Different actor, different meaning — never reuse the coordinator
+  // fields for this. Recording a decision here is a review-tracking action
+  // only; it never modifies highlightText/suggestedText or the source
+  // Google Doc (see lib/ai/teacher-decide.ts).
+  teacherDecision   TeacherDecision?
+  teacherEditedText String?          @db.Text
+  teacherDecidedAt  DateTime?
+  teacherDecidedById String?
+
+  iep              Iep        @relation(fields: [iepId], references: [id], onDelete: Cascade)
+  section          IepSection @relation(fields: [sectionId], references: [id])
+  decidedBy        User?      @relation("FlagDecision", fields: [decidedById], references: [id])
+  // Populated server-side only from the authenticated session in
+  // /api/flags/[flagId]/teacher-decide — never trust a client-supplied
+  // actor id. Separate relation name from FlagDecision (the coordinator's)
+  // for the same auditability reason the fields themselves are separate.
+  teacherDecidedBy User?      @relation("TeacherFlagDecision", fields: [teacherDecidedById], references: [id])
+
+  @@index([iepId, status])
+  @@index([iepId, layer])
+  @@index([status])
+}
+
+// ─── Review Layer Findings ─────────────────────────────────────────────────────
+// One row per framework layer per review run. Upserted (not accumulated) on
+// each review, since a re-run should replace the prior assessment for a layer.
+model ReviewLayerFinding {
+  id           String        @id @default(cuid())
+  iepId        String
+  layer        ReviewLayer
+  status       LayerStatus
+  severity     FlagSeverity?
+  evidenceNote String?       @db.Text
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  iep Iep @relation(fields: [iepId], references: [id], onDelete: Cascade)
+
+  @@unique([iepId, layer])
+  @@index([iepId])
+}
+
+// ─── Human Comments ───────────────────────────────────────────────────────────
+
+model Comment {
+  id             String        @id @default(cuid())
+  iepId          String
+  sectionId      String
+  authorId       String
+  highlightStart Int
+  highlightEnd   Int
+  highlightText  String        @db.Text
+  body           String        @db.Text
+  status         CommentStatus @default(OPEN)
+  resolvedById   String?
+  resolvedAt     DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  iep     Iep            @relation(fields: [iepId], references: [id], onDelete: Cascade)
+  section IepSection     @relation(fields: [sectionId], references: [id])
+  author  User           @relation(fields: [authorId], references: [id])
+  replies CommentReply[]
+
+  @@index([iepId, status])
+}
+
+model CommentReply {
+  id        String   @id @default(cuid())
+  commentId String
+  authorId  String
+  body      String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  comment Comment @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  author  User    @relation(fields: [authorId], references: [id])
+}
+
+// ─── Approvals ────────────────────────────────────────────────────────────────
+
+model Approval {
+  id         String      @id @default(cuid())
+  iepId      String
+  stage      Int
+  approverId String
+  adminTitle AdminTitle?
+  note       String?     @db.Text
+  approvedAt DateTime    @default(now())
+
+  iep      Iep  @relation(fields: [iepId], references: [id], onDelete: Cascade)
+  approver User @relation(fields: [approverId], references: [id])
+
+  @@unique([iepId, stage])
+  @@index([iepId])
+}
+
+// ─── Action History ───────────────────────────────────────────────────────────
+
+model ActionHistory {
+  id         String     @id @default(cuid())
+  iepId      String
+  actorId    String
+  actionType ActionType
+  metadata   Json?
+  createdAt  DateTime   @default(now())
+
+  iep   Iep  @relation(fields: [iepId], references: [id], onDelete: Cascade)
+  actor User @relation(fields: [actorId], references: [id])
+
+  @@index([iepId, createdAt])
+  @@index([actorId])
+}

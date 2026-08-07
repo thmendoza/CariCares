@@ -1,0 +1,938 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap");
+
+@supports  (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){#lovable-landing *, #lovable-landing :before, #lovable-landing :after, #lovable-landing ::backdrop{--lc-tw-translate-x:0;--lc-tw-translate-y:0;--lc-tw-translate-z:0;--lc-tw-scale-x:1;--lc-tw-scale-y:1;--lc-tw-scale-z:1;--lc-tw-rotate-x:initial;--lc-tw-rotate-y:initial;--lc-tw-rotate-z:initial;--lc-tw-skew-x:initial;--lc-tw-skew-y:initial;--lc-tw-space-y-reverse:0;--lc-tw-space-x-reverse:0;--lc-tw-divide-y-reverse:0;--lc-tw-border-style:solid;--lc-tw-leading:initial;--lc-tw-font-weight:initial;--lc-tw-tracking:initial;--lc-tw-ordinal:initial;--lc-tw-slashed-zero:initial;--lc-tw-numeric-figure:initial;--lc-tw-numeric-spacing:initial;--lc-tw-numeric-fraction:initial;--lc-tw-shadow:0 0 #0000;--lc-tw-shadow-color:initial;--lc-tw-shadow-alpha:100%;--lc-tw-inset-shadow:0 0 #0000;--lc-tw-inset-shadow-color:initial;--lc-tw-inset-shadow-alpha:100%;--lc-tw-ring-color:initial;--lc-tw-ring-shadow:0 0 #0000;--lc-tw-inset-ring-color:initial;--lc-tw-inset-ring-shadow:0 0 #0000;--lc-tw-ring-inset:initial;--lc-tw-ring-offset-width:0px;--lc-tw-ring-offset-color:#fff;--lc-tw-ring-offset-shadow:0 0 #0000;--lc-tw-outline-style:solid;--lc-tw-blur:initial;--lc-tw-brightness:initial;--lc-tw-contrast:initial;--lc-tw-grayscale:initial;--lc-tw-hue-rotate:initial;--lc-tw-invert:initial;--lc-tw-opacity:initial;--lc-tw-saturate:initial;--lc-tw-sepia:initial;--lc-tw-drop-shadow:initial;--lc-tw-drop-shadow-color:initial;--lc-tw-drop-shadow-alpha:100%;--lc-tw-drop-shadow-size:initial;--lc-tw-backdrop-blur:initial;--lc-tw-backdrop-brightness:initial;--lc-tw-backdrop-contrast:initial;--lc-tw-backdrop-grayscale:initial;--lc-tw-backdrop-hue-rotate:initial;--lc-tw-backdrop-invert:initial;--lc-tw-backdrop-opacity:initial;--lc-tw-backdrop-saturate:initial;--lc-tw-backdrop-sepia:initial;--lc-tw-duration:initial;--lc-tw-ease:initial;--lc-tw-content:"";--lc-tw-animation-delay:0s;--lc-tw-animation-direction:normal;--lc-tw-animation-duration:initial;--lc-tw-animation-fill-mode:none;--lc-tw-animation-iteration-count:1;--lc-tw-enter-blur:0;--lc-tw-enter-opacity:1;--lc-tw-enter-rotate:0;--lc-tw-enter-scale:1;--lc-tw-enter-translate-x:0;--lc-tw-enter-translate-y:0;--lc-tw-exit-blur:0;--lc-tw-exit-opacity:1;--lc-tw-exit-rotate:0;--lc-tw-exit-scale:1;--lc-tw-exit-translate-x:0;--lc-tw-exit-translate-y:0}}
+#lovable-landing, #lovable-landing :host{--lc-font-sans:"Nunito", ui-sans-serif, system-ui, sans-serif;--lc-font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--lc-color-black:#000;--lc-color-white:#fff;--lc-spacing:.25rem;--lc-container-sm:24rem;--lc-container-md:28rem;--lc-container-lg:32rem;--lc-container-xl:36rem;--lc-container-2xl:42rem;--lc-container-4xl:56rem;--lc-container-5xl:64rem;--lc-container-7xl:80rem;--lc-text-xs:.75rem;--lc-text-xs--line-height:calc(1 / .75);--lc-text-sm:.875rem;--lc-text-sm--line-height:calc(1.25 / .875);--lc-text-base:1rem;--lc-text-base--line-height:calc(1.5 / 1);--lc-text-lg:1.125rem;--lc-text-lg--line-height:calc(1.75 / 1.125);--lc-text-xl:1.25rem;--lc-text-xl--line-height:calc(1.75 / 1.25);--lc-text-2xl:1.5rem;--lc-text-2xl--line-height:calc(2 / 1.5);--lc-text-3xl:1.875rem;--lc-text-3xl--line-height:calc(2.25 / 1.875);--lc-text-4xl:2.25rem;--lc-text-4xl--line-height:calc(2.5 / 2.25);--lc-text-5xl:3rem;--lc-text-5xl--line-height:1;--lc-text-6xl:3.75rem;--lc-text-6xl--line-height:1;--lc-text-7xl:4.5rem;--lc-text-7xl--line-height:1;--lc-font-weight-normal:400;--lc-font-weight-medium:500;--lc-font-weight-semibold:600;--lc-font-weight-bold:700;--lc-tracking-tight:-.025em;--lc-tracking-wide:.025em;--lc-tracking-widest:.1em;--lc-leading-tight:1.25;--lc-leading-relaxed:1.625;--lc-radius-2xl:calc(var(--lc-radius) + 12px);--lc-ease-in-out:cubic-bezier(.4, 0, .2, 1);--lc-animate-pulse:pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;--lc-aspect-video:16 / 9;--lc-default-transition-duration:.15s;--lc-default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--lc-default-font-family:"Nunito", ui-sans-serif, system-ui, sans-serif;--lc-default-mono-font-family:var(--lc-font-mono);--lc-color-background:var(--lc-background);--lc-color-foreground:var(--lc-foreground);--lc-color-border:var(--lc-border);--lc-font-display:"Fraunces", Georgia, serif}
+#lovable-landing *, #lovable-landing :after, #lovable-landing :before, #lovable-landing ::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}
+#lovable-landing ::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}
+#lovable-landing, #lovable-landing :host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--lc-default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--lc-default-font-feature-settings,normal);font-variation-settings:var(--lc-default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}
+#lovable-landing hr{height:0;color:inherit;border-top-width:1px}
+#lovable-landing abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
+#lovable-landing h1, #lovable-landing h2, #lovable-landing h3, #lovable-landing h4, #lovable-landing h5, #lovable-landing h6{font-size:inherit;font-weight:inherit}
+#lovable-landing a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}
+#lovable-landing b, #lovable-landing strong{font-weight:bolder}
+#lovable-landing code, #lovable-landing kbd, #lovable-landing samp, #lovable-landing pre{font-family:var(--lc-default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--lc-default-mono-font-feature-settings,normal);font-variation-settings:var(--lc-default-mono-font-variation-settings,normal);font-size:1em}
+#lovable-landing small{font-size:80%}
+#lovable-landing sub, #lovable-landing sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}
+#lovable-landing sub{bottom:-.25em}
+#lovable-landing sup{top:-.5em}
+#lovable-landing table{text-indent:0;border-color:inherit;border-collapse:collapse}
+#lovable-landing :-moz-focusring:where(:not(iframe)){outline:auto}
+#lovable-landing progress{vertical-align:baseline}
+#lovable-landing summary{display:list-item}
+#lovable-landing ol, #lovable-landing ul, #lovable-landing menu{list-style:none}
+#lovable-landing img, #lovable-landing svg, #lovable-landing video, #lovable-landing canvas, #lovable-landing audio, #lovable-landing iframe, #lovable-landing embed, #lovable-landing object{vertical-align:middle;display:block}
+#lovable-landing img, #lovable-landing video{max-width:100%;height:auto}
+#lovable-landing button, #lovable-landing input, #lovable-landing select, #lovable-landing optgroup, #lovable-landing textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}
+#lovable-landing ::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}
+#lovable-landing :where(select:is([multiple], #lovable-landing [size])) optgroup{font-weight:bolder}
+#lovable-landing :where(select:is([multiple], #lovable-landing [size])) optgroup option{padding-inline-start:20px}
+#lovable-landing ::file-selector-button{margin-inline-end:4px}
+#lovable-landing ::placeholder{opacity:1}
+@supports  (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){#lovable-landing ::placeholder{color:currentColor}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing ::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}
+#lovable-landing textarea{resize:vertical}
+#lovable-landing ::-webkit-search-decoration{-webkit-appearance:none}
+#lovable-landing ::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}
+#lovable-landing ::-webkit-datetime-edit{display:inline-flex}
+#lovable-landing ::-webkit-datetime-edit-fields-wrapper{padding:0}
+#lovable-landing ::-webkit-datetime-edit{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-year-field{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-month-field{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-day-field{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-hour-field{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-minute-field{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-second-field{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-millisecond-field{padding-block:0}
+#lovable-landing ::-webkit-datetime-edit-meridiem-field{padding-block:0}
+#lovable-landing ::-webkit-calendar-picker-indicator{line-height:1}
+#lovable-landing :-moz-ui-invalid{box-shadow:none}
+#lovable-landing button, #lovable-landing input:where([type=button], #lovable-landing [type=reset], #lovable-landing [type=submit]){appearance:button}
+#lovable-landing ::file-selector-button{appearance:button}
+#lovable-landing ::-webkit-inner-spin-button{height:auto}
+#lovable-landing ::-webkit-outer-spin-button{height:auto}
+#lovable-landing [hidden]:where(:not([hidden=until-found])){display:none!important}
+#lovable-landing *{border-color:var(--lc-color-border)}
+#lovable-landing body{background-color:var(--lc-color-background);color:var(--lc-color-foreground);font-family:var(--lc-font-sans);-webkit-font-smoothing:antialiased}
+#lovable-landing h1, #lovable-landing h2, #lovable-landing h3, #lovable-landing h4{font-family:var(--lc-font-display);letter-spacing:-.015em;font-weight:600}
+#lovable-landing .pointer-events-none{pointer-events:none}
+#lovable-landing .invisible{visibility:hidden}
+#lovable-landing .sr-only{clip-path:inset(50%);white-space:nowrap;border-width:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}
+#lovable-landing .absolute{position:absolute}
+#lovable-landing .fixed{position:fixed}
+#lovable-landing .relative{position:relative}
+#lovable-landing .sticky{position:sticky}
+#lovable-landing .inset-0{inset:0}
+#lovable-landing .inset-x-0{inset-inline:0}
+#lovable-landing .inset-y-0{inset-block:0}
+#lovable-landing .-top-12{top:calc(var(--lc-spacing) * -12)}
+#lovable-landing .top-0{top:0}
+#lovable-landing .top-1\.5{top:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .top-1\/2{top:50%}
+#lovable-landing .top-3\.5{top:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .top-4{top:calc(var(--lc-spacing) * 4)}
+#lovable-landing .top-\[1px\]{top:1px}
+#lovable-landing .top-\[50\%\]{top:50%}
+#lovable-landing .top-\[60\%\]{top:60%}
+#lovable-landing .top-full{top:100%}
+#lovable-landing .-right-12{right:calc(var(--lc-spacing) * -12)}
+#lovable-landing .right-0{right:0}
+#lovable-landing .right-1{right:var(--lc-spacing)}
+#lovable-landing .right-2{right:calc(var(--lc-spacing) * 2)}
+#lovable-landing .right-3{right:calc(var(--lc-spacing) * 3)}
+#lovable-landing .right-4{right:calc(var(--lc-spacing) * 4)}
+#lovable-landing .-bottom-12{bottom:calc(var(--lc-spacing) * -12)}
+#lovable-landing .bottom-0{bottom:0}
+#lovable-landing .-left-12{left:calc(var(--lc-spacing) * -12)}
+#lovable-landing .left-0{left:0}
+#lovable-landing .left-1\/2{left:50%}
+#lovable-landing .left-2{left:calc(var(--lc-spacing) * 2)}
+#lovable-landing .left-\[50\%\]{left:50%}
+#lovable-landing .isolate{isolation:isolate}
+#lovable-landing .z-10{z-index:10}
+#lovable-landing .z-20{z-index:20}
+#lovable-landing .z-30{z-index:30}
+#lovable-landing .z-50{z-index:50}
+#lovable-landing .z-\[1\]{z-index:1}
+#lovable-landing .-mx-1{margin-inline:calc(var(--lc-spacing) * -1)}
+#lovable-landing .mx-2{margin-inline:calc(var(--lc-spacing) * 2)}
+#lovable-landing .mx-3\.5{margin-inline:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .mx-auto{margin-inline:auto}
+#lovable-landing .my-0\.5{margin-block:calc(var(--lc-spacing) * .5)}
+#lovable-landing .my-1{margin-block:var(--lc-spacing)}
+#lovable-landing .-mt-4{margin-top:calc(var(--lc-spacing) * -4)}
+#lovable-landing .mt-1{margin-top:var(--lc-spacing)}
+#lovable-landing .mt-1\.5{margin-top:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .mt-2{margin-top:calc(var(--lc-spacing) * 2)}
+#lovable-landing .mt-3{margin-top:calc(var(--lc-spacing) * 3)}
+#lovable-landing .mt-4{margin-top:calc(var(--lc-spacing) * 4)}
+#lovable-landing .mt-5{margin-top:calc(var(--lc-spacing) * 5)}
+#lovable-landing .mt-6{margin-top:calc(var(--lc-spacing) * 6)}
+#lovable-landing .mt-7{margin-top:calc(var(--lc-spacing) * 7)}
+#lovable-landing .mt-8{margin-top:calc(var(--lc-spacing) * 8)}
+#lovable-landing .mt-9{margin-top:calc(var(--lc-spacing) * 9)}
+#lovable-landing .mt-10{margin-top:calc(var(--lc-spacing) * 10)}
+#lovable-landing .mt-12{margin-top:calc(var(--lc-spacing) * 12)}
+#lovable-landing .mt-14{margin-top:calc(var(--lc-spacing) * 14)}
+#lovable-landing .mt-24{margin-top:calc(var(--lc-spacing) * 24)}
+#lovable-landing .mt-auto{margin-top:auto}
+#lovable-landing .mr-2{margin-right:calc(var(--lc-spacing) * 2)}
+#lovable-landing .-mb-10{margin-bottom:calc(var(--lc-spacing) * -10)}
+#lovable-landing .mb-1{margin-bottom:var(--lc-spacing)}
+#lovable-landing .mb-1\.5{margin-bottom:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .mb-3{margin-bottom:calc(var(--lc-spacing) * 3)}
+#lovable-landing .-ml-4{margin-left:calc(var(--lc-spacing) * -4)}
+#lovable-landing .ml-1{margin-left:var(--lc-spacing)}
+#lovable-landing .ml-2{margin-left:calc(var(--lc-spacing) * 2)}
+#lovable-landing .ml-auto{margin-left:auto}
+#lovable-landing .block{display:block}
+#lovable-landing .flex{display:flex}
+#lovable-landing .grid{display:grid}
+#lovable-landing .hidden{display:none}
+#lovable-landing .inline-flex{display:inline-flex}
+#lovable-landing .table{display:table}
+#lovable-landing .aspect-square{aspect-ratio:1}
+#lovable-landing .aspect-video{aspect-ratio:var(--lc-aspect-video)}
+#lovable-landing .size-\(--lc-cell-size\){width:var(--lc-cell-size);height:var(--lc-cell-size)}
+#lovable-landing .size-4{width:calc(var(--lc-spacing) * 4);height:calc(var(--lc-spacing) * 4)}
+#lovable-landing .h-\(--lc-cell-size\){height:var(--lc-cell-size)}
+#lovable-landing .h-1\.5{height:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .h-2{height:calc(var(--lc-spacing) * 2)}
+#lovable-landing .h-2\.5{height:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .h-3{height:calc(var(--lc-spacing) * 3)}
+#lovable-landing .h-3\.5{height:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .h-4{height:calc(var(--lc-spacing) * 4)}
+#lovable-landing .h-5{height:calc(var(--lc-spacing) * 5)}
+#lovable-landing .h-7{height:calc(var(--lc-spacing) * 7)}
+#lovable-landing .h-8{height:calc(var(--lc-spacing) * 8)}
+#lovable-landing .h-9{height:calc(var(--lc-spacing) * 9)}
+#lovable-landing .h-10{height:calc(var(--lc-spacing) * 10)}
+#lovable-landing .h-12{height:calc(var(--lc-spacing) * 12)}
+#lovable-landing .h-14{height:calc(var(--lc-spacing) * 14)}
+#lovable-landing .h-40{height:calc(var(--lc-spacing) * 40)}
+#lovable-landing .h-\[1px\]{height:1px}
+#lovable-landing .h-\[var\(--lc-radix-navigation-menu-viewport-height\)\]{height:var(--lc-radix-navigation-menu-viewport-height)}
+#lovable-landing .h-\[var\(--lc-radix-select-trigger-height\)\]{height:var(--lc-radix-select-trigger-height)}
+#lovable-landing .h-auto{height:auto}
+#lovable-landing .h-fit{height:fit-content}
+#lovable-landing .h-full{height:100%}
+#lovable-landing .h-px{height:1px}
+#lovable-landing .h-svh{height:100svh}
+#lovable-landing .max-h-\(--lc-radix-context-menu-content-available-height\){max-height:var(--lc-radix-context-menu-content-available-height)}
+#lovable-landing .max-h-\(--lc-radix-select-content-available-height\){max-height:var(--lc-radix-select-content-available-height)}
+#lovable-landing .max-h-\[300px\]{max-height:300px}
+#lovable-landing .max-h-\[var\(--lc-radix-dropdown-menu-content-available-height\)\]{max-height:var(--lc-radix-dropdown-menu-content-available-height)}
+#lovable-landing .min-h-0{min-height:0}
+#lovable-landing .min-h-\[60px\]{min-height:60px}
+#lovable-landing .min-h-\[92vh\]{min-height:92vh}
+#lovable-landing .min-h-screen{min-height:100vh}
+#lovable-landing .min-h-svh{min-height:100svh}
+#lovable-landing .w-\(--lc-cell-size\){width:var(--lc-cell-size)}
+#lovable-landing .w-\(--lc-sidebar-width\){width:var(--lc-sidebar-width)}
+#lovable-landing .w-0{width:0}
+#lovable-landing .w-1{width:var(--lc-spacing)}
+#lovable-landing .w-2{width:calc(var(--lc-spacing) * 2)}
+#lovable-landing .w-2\.5{width:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .w-3{width:calc(var(--lc-spacing) * 3)}
+#lovable-landing .w-3\.5{width:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .w-3\/4{width:75%}
+#lovable-landing .w-4{width:calc(var(--lc-spacing) * 4)}
+#lovable-landing .w-5{width:calc(var(--lc-spacing) * 5)}
+#lovable-landing .w-7{width:calc(var(--lc-spacing) * 7)}
+#lovable-landing .w-8{width:calc(var(--lc-spacing) * 8)}
+#lovable-landing .w-9{width:calc(var(--lc-spacing) * 9)}
+#lovable-landing .w-10{width:calc(var(--lc-spacing) * 10)}
+#lovable-landing .w-12{width:calc(var(--lc-spacing) * 12)}
+#lovable-landing .w-14{width:calc(var(--lc-spacing) * 14)}
+#lovable-landing .w-24{width:calc(var(--lc-spacing) * 24)}
+#lovable-landing .w-28{width:calc(var(--lc-spacing) * 28)}
+#lovable-landing .w-32{width:calc(var(--lc-spacing) * 32)}
+#lovable-landing .w-36{width:calc(var(--lc-spacing) * 36)}
+#lovable-landing .w-40{width:calc(var(--lc-spacing) * 40)}
+#lovable-landing .w-56{width:calc(var(--lc-spacing) * 56)}
+#lovable-landing .w-64{width:calc(var(--lc-spacing) * 64)}
+#lovable-landing .w-72{width:calc(var(--lc-spacing) * 72)}
+#lovable-landing .w-\[1px\]{width:1px}
+#lovable-landing .w-\[100px\]{width:100px}
+#lovable-landing .w-auto{width:auto}
+#lovable-landing .w-fit{width:fit-content}
+#lovable-landing .w-full{width:100%}
+#lovable-landing .w-max{width:max-content}
+#lovable-landing .w-px{width:1px}
+#lovable-landing .max-w-\(--lc-skeleton-width\){max-width:var(--lc-skeleton-width)}
+#lovable-landing .max-w-2xl{max-width:var(--lc-container-2xl)}
+#lovable-landing .max-w-4xl{max-width:var(--lc-container-4xl)}
+#lovable-landing .max-w-5xl{max-width:var(--lc-container-5xl)}
+#lovable-landing .max-w-7xl{max-width:var(--lc-container-7xl)}
+#lovable-landing .max-w-lg{max-width:var(--lc-container-lg)}
+#lovable-landing .max-w-max{max-width:max-content}
+#lovable-landing .max-w-md{max-width:var(--lc-container-md)}
+#lovable-landing .max-w-sm{max-width:var(--lc-container-sm)}
+#lovable-landing .max-w-xl{max-width:var(--lc-container-xl)}
+#lovable-landing .min-w-\(--lc-cell-size\){min-width:var(--lc-cell-size)}
+#lovable-landing .min-w-0{min-width:0}
+#lovable-landing .min-w-5{min-width:calc(var(--lc-spacing) * 5)}
+#lovable-landing .min-w-8{min-width:calc(var(--lc-spacing) * 8)}
+#lovable-landing .min-w-9{min-width:calc(var(--lc-spacing) * 9)}
+#lovable-landing .min-w-10{min-width:calc(var(--lc-spacing) * 10)}
+#lovable-landing .min-w-\[8rem\]{min-width:8rem}
+#lovable-landing .min-w-\[12rem\]{min-width:12rem}
+#lovable-landing .min-w-\[var\(--lc-radix-select-trigger-width\)\]{min-width:var(--lc-radix-select-trigger-width)}
+#lovable-landing .flex-1{flex:1}
+#lovable-landing .shrink-0{flex-shrink:0}
+#lovable-landing .grow{flex-grow:1}
+#lovable-landing .grow-0{flex-grow:0}
+#lovable-landing .basis-full{flex-basis:100%}
+#lovable-landing .caption-bottom{caption-side:bottom}
+#lovable-landing .border-collapse{border-collapse:collapse}
+#lovable-landing .wave-slow{transform-origin:60% 80%;animation:3.2s ease-in-out infinite cari-wave}
+#lovable-landing .origin-\(--lc-radix-context-menu-content-transform-origin\){transform-origin:var(--lc-radix-context-menu-content-transform-origin)}
+#lovable-landing .origin-\(--lc-radix-dropdown-menu-content-transform-origin\){transform-origin:var(--lc-radix-dropdown-menu-content-transform-origin)}
+#lovable-landing .origin-\(--lc-radix-hover-card-content-transform-origin\){transform-origin:var(--lc-radix-hover-card-content-transform-origin)}
+#lovable-landing .origin-\(--lc-radix-menubar-content-transform-origin\){transform-origin:var(--lc-radix-menubar-content-transform-origin)}
+#lovable-landing .origin-\(--lc-radix-popover-content-transform-origin\){transform-origin:var(--lc-radix-popover-content-transform-origin)}
+#lovable-landing .origin-\(--lc-radix-select-content-transform-origin\){transform-origin:var(--lc-radix-select-content-transform-origin)}
+#lovable-landing .origin-\(--lc-radix-tooltip-content-transform-origin\){transform-origin:var(--lc-radix-tooltip-content-transform-origin)}
+#lovable-landing .-translate-x-1\/2{--lc-tw-translate-x:calc(calc(1 / 2 * 100%) * -1);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .-translate-x-px{--lc-tw-translate-x:-1px;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .translate-x-\[-50\%\]{--lc-tw-translate-x:-50%;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .translate-x-px{--lc-tw-translate-x:1px;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .-translate-y-1\/2{--lc-tw-translate-y:calc(calc(1 / 2 * 100%) * -1);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .translate-y-\[-50\%\]{--lc-tw-translate-y:-50%;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .-scale-x-100{--lc-tw-scale-x:calc(100% * -1);scale:var(--lc-tw-scale-x) var(--lc-tw-scale-y)}
+#lovable-landing .-rotate-3{rotate:-3deg}
+#lovable-landing .rotate-2{rotate:2deg}
+#lovable-landing .rotate-45{rotate:45deg}
+#lovable-landing .rotate-90{rotate:90deg}
+#lovable-landing .transform{transform:var(--lc-tw-rotate-x,) var(--lc-tw-rotate-y,) var(--lc-tw-rotate-z,) var(--lc-tw-skew-x,) var(--lc-tw-skew-y,)}
+#lovable-landing .animate-caret-blink{animation:1.25s ease-out infinite caret-blink}
+#lovable-landing .animate-in{animation:enter var(--lc-tw-animation-duration,var(--lc-tw-duration,.15s))var(--lc-tw-ease,ease)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .animate-pulse{animation:var(--lc-animate-pulse)}
+#lovable-landing .float-slow{animation:6s ease-in-out infinite cari-float}
+#lovable-landing .cursor-default{cursor:default}
+#lovable-landing .cursor-pointer{cursor:pointer}
+#lovable-landing .touch-none{touch-action:none}
+#lovable-landing .list-none{list-style-type:none}
+#lovable-landing .flex-col{flex-direction:column}
+#lovable-landing .flex-col-reverse{flex-direction:column-reverse}
+#lovable-landing .flex-row{flex-direction:row}
+#lovable-landing .flex-wrap{flex-wrap:wrap}
+#lovable-landing .place-content-center{place-content:center}
+#lovable-landing .items-center{align-items:center}
+#lovable-landing .items-end{align-items:flex-end}
+#lovable-landing .items-start{align-items:flex-start}
+#lovable-landing .items-stretch{align-items:stretch}
+#lovable-landing .justify-between{justify-content:space-between}
+#lovable-landing .justify-center{justify-content:center}
+#lovable-landing .gap-1{gap:var(--lc-spacing)}
+#lovable-landing .gap-1\.5{gap:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .gap-2{gap:calc(var(--lc-spacing) * 2)}
+#lovable-landing .gap-3{gap:calc(var(--lc-spacing) * 3)}
+#lovable-landing .gap-4{gap:calc(var(--lc-spacing) * 4)}
+#lovable-landing .gap-5{gap:calc(var(--lc-spacing) * 5)}
+#lovable-landing .gap-6{gap:calc(var(--lc-spacing) * 6)}
+#lovable-landing .gap-7{gap:calc(var(--lc-spacing) * 7)}
+#lovable-landing .gap-8{gap:calc(var(--lc-spacing) * 8)}
+#lovable-landing .gap-10{gap:calc(var(--lc-spacing) * 10)}
+#lovable-landing .gap-12{gap:calc(var(--lc-spacing) * 12)}
+#lovable-landing :where(.space-y-1>:not(:last-child)){--lc-tw-space-y-reverse:0;margin-block-start:calc(var(--lc-spacing) * var(--lc-tw-space-y-reverse));margin-block-end:calc(var(--lc-spacing) * calc(1 - var(--lc-tw-space-y-reverse)))}
+#lovable-landing :where(.space-y-1\.5>:not(:last-child)){--lc-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--lc-spacing) * 1.5) * var(--lc-tw-space-y-reverse));margin-block-end:calc(calc(var(--lc-spacing) * 1.5) * calc(1 - var(--lc-tw-space-y-reverse)))}
+#lovable-landing :where(.space-y-2>:not(:last-child)){--lc-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--lc-spacing) * 2) * var(--lc-tw-space-y-reverse));margin-block-end:calc(calc(var(--lc-spacing) * 2) * calc(1 - var(--lc-tw-space-y-reverse)))}
+#lovable-landing :where(.space-y-3>:not(:last-child)){--lc-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--lc-spacing) * 3) * var(--lc-tw-space-y-reverse));margin-block-end:calc(calc(var(--lc-spacing) * 3) * calc(1 - var(--lc-tw-space-y-reverse)))}
+#lovable-landing :where(.space-y-4>:not(:last-child)){--lc-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--lc-spacing) * 4) * var(--lc-tw-space-y-reverse));margin-block-end:calc(calc(var(--lc-spacing) * 4) * calc(1 - var(--lc-tw-space-y-reverse)))}
+#lovable-landing :where(.space-y-5>:not(:last-child)){--lc-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--lc-spacing) * 5) * var(--lc-tw-space-y-reverse));margin-block-end:calc(calc(var(--lc-spacing) * 5) * calc(1 - var(--lc-tw-space-y-reverse)))}
+#lovable-landing :where(.space-y-6>:not(:last-child)){--lc-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--lc-spacing) * 6) * var(--lc-tw-space-y-reverse));margin-block-end:calc(calc(var(--lc-spacing) * 6) * calc(1 - var(--lc-tw-space-y-reverse)))}
+#lovable-landing :where(.space-x-1>:not(:last-child)){--lc-tw-space-x-reverse:0;margin-inline-start:calc(var(--lc-spacing) * var(--lc-tw-space-x-reverse));margin-inline-end:calc(var(--lc-spacing) * calc(1 - var(--lc-tw-space-x-reverse)))}
+#lovable-landing :where(.divide-y>:not(:last-child)){--lc-tw-divide-y-reverse:0;border-bottom-style:var(--lc-tw-border-style);border-top-style:var(--lc-tw-border-style);border-top-width:calc(1px * var(--lc-tw-divide-y-reverse));border-bottom-width:calc(1px * calc(1 - var(--lc-tw-divide-y-reverse)))}
+#lovable-landing :where(.divide-border>:not(:last-child)){border-color:var(--lc-border)}
+#lovable-landing .overflow-auto{overflow:auto}
+#lovable-landing .overflow-hidden{overflow:hidden}
+#lovable-landing .overflow-x-hidden{overflow-x:hidden}
+#lovable-landing .overflow-y-auto{overflow-y:auto}
+#lovable-landing .paper{background-color:var(--lc-card);border:1px solid var(--lc-border);border-radius:var(--lc-radius-2xl);box-shadow:var(--lc-shadow-paper);background-image:radial-gradient(oklch(60% .04 60/.05) 1px,#0000 1px);background-size:22px 22px}
+#lovable-landing .rounded-2xl{border-radius:calc(var(--lc-radius) + 12px)}
+#lovable-landing .rounded-3xl{border-radius:calc(var(--lc-radius) + 20px)}
+#lovable-landing .rounded-\[2px\]{border-radius:2px}
+#lovable-landing .rounded-\[inherit\]{border-radius:inherit}
+#lovable-landing .rounded-full{border-radius:2147483647px}
+#lovable-landing .rounded-lg{border-radius:var(--lc-radius)}
+#lovable-landing .rounded-md{border-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .rounded-none{border-radius:0}
+#lovable-landing .rounded-sm{border-radius:calc(var(--lc-radius) - 6px)}
+#lovable-landing .rounded-xl{border-radius:calc(var(--lc-radius) + 6px)}
+#lovable-landing .rounded-t-\[10px\]{border-top-left-radius:10px;border-top-right-radius:10px}
+#lovable-landing .rounded-l-md{border-top-left-radius:calc(var(--lc-radius) - 3px);border-bottom-left-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .rounded-tl-sm{border-top-left-radius:calc(var(--lc-radius) - 6px)}
+#lovable-landing .rounded-r-md{border-top-right-radius:calc(var(--lc-radius) - 3px);border-bottom-right-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .border{border-style:var(--lc-tw-border-style);border-width:1px}
+#lovable-landing .border-2{border-style:var(--lc-tw-border-style);border-width:2px}
+#lovable-landing .border-\[1\.5px\]{border-style:var(--lc-tw-border-style);border-width:1.5px}
+#lovable-landing .border-y{border-block-style:var(--lc-tw-border-style);border-block-width:1px}
+#lovable-landing .border-t{border-top-style:var(--lc-tw-border-style);border-top-width:1px}
+#lovable-landing .border-r{border-right-style:var(--lc-tw-border-style);border-right-width:1px}
+#lovable-landing .border-b{border-bottom-style:var(--lc-tw-border-style);border-bottom-width:1px}
+#lovable-landing .border-l{border-left-style:var(--lc-tw-border-style);border-left-width:1px}
+#lovable-landing .border-dashed{--lc-tw-border-style:dashed;border-style:dashed}
+#lovable-landing .border-\(--lc-color-border\){border-color:var(--lc-color-border)}
+#lovable-landing .border-accent{border-color:var(--lc-accent)}
+#lovable-landing .border-border, #lovable-landing .border-border\/50{border-color:var(--lc-border)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .border-border\/50{border-color:color-mix(in oklab, var(--lc-border) 50%, transparent)}}
+#lovable-landing .border-border\/70{border-color:var(--lc-border)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .border-border\/70{border-color:color-mix(in oklab, var(--lc-border) 70%, transparent)}}
+#lovable-landing .border-destructive\/50{border-color:var(--lc-destructive)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .border-destructive\/50{border-color:color-mix(in oklab, var(--lc-destructive) 50%, transparent)}}
+#lovable-landing .border-input{border-color:var(--lc-input)}
+#lovable-landing .border-primary, #lovable-landing .border-primary\/50{border-color:var(--lc-primary)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .border-primary\/50{border-color:color-mix(in oklab, var(--lc-primary) 50%, transparent)}}
+#lovable-landing .border-transparent{border-color:#0000}
+#lovable-landing .border-white\/50{border-color:#ffffff80}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .border-white\/50{border-color:color-mix(in oklab, var(--lc-color-white) 50%, transparent)}}
+#lovable-landing .border-t-transparent{border-top-color:#0000}
+#lovable-landing .border-l-transparent{border-left-color:#0000}
+#lovable-landing .bg-\(--lc-color-bg\){background-color:var(--lc-color-bg)}
+#lovable-landing .bg-accent, #lovable-landing .bg-accent\/40{background-color:var(--lc-accent)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-accent\/40{background-color:color-mix(in oklab, var(--lc-accent) 40%, transparent)}}
+#lovable-landing .bg-background{background-color:var(--lc-background)}
+#lovable-landing .bg-black\/80{background-color:#000c}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-black\/80{background-color:color-mix(in oklab, var(--lc-color-black) 80%, transparent)}}
+#lovable-landing .bg-border{background-color:var(--lc-border)}
+#lovable-landing .bg-card, #lovable-landing .bg-card\/70{background-color:var(--lc-card)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-card\/70{background-color:color-mix(in oklab, var(--lc-card) 70%, transparent)}}
+#lovable-landing .bg-card\/80{background-color:var(--lc-card)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-card\/80{background-color:color-mix(in oklab, var(--lc-card) 80%, transparent)}}
+#lovable-landing .bg-card\/85{background-color:var(--lc-card)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-card\/85{background-color:color-mix(in oklab, var(--lc-card) 85%, transparent)}}
+#lovable-landing .bg-cream, #lovable-landing .bg-cream\/60{background-color:var(--lc-cream)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-cream\/60{background-color:color-mix(in oklab, var(--lc-cream) 60%, transparent)}}
+#lovable-landing .bg-cream\/70{background-color:var(--lc-cream)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-cream\/70{background-color:color-mix(in oklab, var(--lc-cream) 70%, transparent)}}
+#lovable-landing .bg-destructive{background-color:var(--lc-destructive)}
+#lovable-landing .bg-foreground{background-color:var(--lc-foreground)}
+#lovable-landing .bg-ivory{background-color:var(--lc-ivory)}
+#lovable-landing .bg-muted, #lovable-landing .bg-muted\/50{background-color:var(--lc-muted)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-muted\/50{background-color:color-mix(in oklab, var(--lc-muted) 50%, transparent)}}
+#lovable-landing .bg-olive{background-color:var(--lc-olive)}
+#lovable-landing .bg-popover{background-color:var(--lc-popover)}
+#lovable-landing .bg-primary, #lovable-landing .bg-primary\/10{background-color:var(--lc-primary)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-primary\/10{background-color:color-mix(in oklab, var(--lc-primary) 10%, transparent)}}
+#lovable-landing .bg-primary\/20{background-color:var(--lc-primary)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-primary\/20{background-color:color-mix(in oklab, var(--lc-primary) 20%, transparent)}}
+#lovable-landing .bg-sage{background-color:var(--lc-sage)}
+#lovable-landing .bg-secondary, #lovable-landing .bg-secondary\/15{background-color:var(--lc-secondary)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-secondary\/15{background-color:color-mix(in oklab, var(--lc-secondary) 15%, transparent)}}
+#lovable-landing .bg-transparent{background-color:#0000}
+#lovable-landing .bg-white\/20{background-color:#fff3}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-white\/20{background-color:color-mix(in oklab, var(--lc-color-white) 20%, transparent)}}
+#lovable-landing .bg-white\/35{background-color:#ffffff59}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .bg-white\/35{background-color:color-mix(in oklab, var(--lc-color-white) 35%, transparent)}}
+#lovable-landing .hero-veil{background-image:var(--lc-gradient-hero-veil)}
+#lovable-landing .warm-panel{background-image:var(--lc-gradient-warm)}
+#lovable-landing .fill-current{fill:currentColor}
+#lovable-landing .fill-primary{fill:var(--lc-primary)}
+#lovable-landing .object-contain{object-fit:contain}
+#lovable-landing .object-cover{object-fit:cover}
+#lovable-landing .p-0{padding:0}
+#lovable-landing .p-1{padding:var(--lc-spacing)}
+#lovable-landing .p-2{padding:calc(var(--lc-spacing) * 2)}
+#lovable-landing .p-3{padding:calc(var(--lc-spacing) * 3)}
+#lovable-landing .p-4{padding:calc(var(--lc-spacing) * 4)}
+#lovable-landing .p-5{padding:calc(var(--lc-spacing) * 5)}
+#lovable-landing .p-6{padding:calc(var(--lc-spacing) * 6)}
+#lovable-landing .p-7{padding:calc(var(--lc-spacing) * 7)}
+#lovable-landing .p-8{padding:calc(var(--lc-spacing) * 8)}
+#lovable-landing .p-9{padding:calc(var(--lc-spacing) * 9)}
+#lovable-landing .p-10{padding:calc(var(--lc-spacing) * 10)}
+#lovable-landing .p-12{padding:calc(var(--lc-spacing) * 12)}
+#lovable-landing .p-\[1px\]{padding:1px}
+#lovable-landing .px-\(--lc-cell-size\){padding-inline:var(--lc-cell-size)}
+#lovable-landing .px-1{padding-inline:var(--lc-spacing)}
+#lovable-landing .px-1\.5{padding-inline:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .px-2{padding-inline:calc(var(--lc-spacing) * 2)}
+#lovable-landing .px-2\.5{padding-inline:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .px-3{padding-inline:calc(var(--lc-spacing) * 3)}
+#lovable-landing .px-4{padding-inline:calc(var(--lc-spacing) * 4)}
+#lovable-landing .px-5{padding-inline:calc(var(--lc-spacing) * 5)}
+#lovable-landing .px-6{padding-inline:calc(var(--lc-spacing) * 6)}
+#lovable-landing .px-7{padding-inline:calc(var(--lc-spacing) * 7)}
+#lovable-landing .px-8{padding-inline:calc(var(--lc-spacing) * 8)}
+#lovable-landing .py-0\.5{padding-block:calc(var(--lc-spacing) * .5)}
+#lovable-landing .py-1{padding-block:var(--lc-spacing)}
+#lovable-landing .py-1\.5{padding-block:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .py-2{padding-block:calc(var(--lc-spacing) * 2)}
+#lovable-landing .py-2\.5{padding-block:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .py-3{padding-block:calc(var(--lc-spacing) * 3)}
+#lovable-landing .py-3\.5{padding-block:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .py-4{padding-block:calc(var(--lc-spacing) * 4)}
+#lovable-landing .py-5{padding-block:calc(var(--lc-spacing) * 5)}
+#lovable-landing .py-6{padding-block:calc(var(--lc-spacing) * 6)}
+#lovable-landing .py-10{padding-block:calc(var(--lc-spacing) * 10)}
+#lovable-landing .py-12{padding-block:calc(var(--lc-spacing) * 12)}
+#lovable-landing .py-14{padding-block:calc(var(--lc-spacing) * 14)}
+#lovable-landing .py-16{padding-block:calc(var(--lc-spacing) * 16)}
+#lovable-landing .py-24{padding-block:calc(var(--lc-spacing) * 24)}
+#lovable-landing .py-28{padding-block:calc(var(--lc-spacing) * 28)}
+#lovable-landing .pt-0{padding-top:0}
+#lovable-landing .pt-3{padding-top:calc(var(--lc-spacing) * 3)}
+#lovable-landing .pt-4{padding-top:calc(var(--lc-spacing) * 4)}
+#lovable-landing .pt-6{padding-top:calc(var(--lc-spacing) * 6)}
+#lovable-landing .pt-10{padding-top:calc(var(--lc-spacing) * 10)}
+#lovable-landing .pt-12{padding-top:calc(var(--lc-spacing) * 12)}
+#lovable-landing .pr-1{padding-right:var(--lc-spacing)}
+#lovable-landing .pr-2{padding-right:calc(var(--lc-spacing) * 2)}
+#lovable-landing .pr-2\.5{padding-right:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .pr-8{padding-right:calc(var(--lc-spacing) * 8)}
+#lovable-landing .pb-3{padding-bottom:calc(var(--lc-spacing) * 3)}
+#lovable-landing .pb-4{padding-bottom:calc(var(--lc-spacing) * 4)}
+#lovable-landing .pb-9{padding-bottom:calc(var(--lc-spacing) * 9)}
+#lovable-landing .pb-28{padding-bottom:calc(var(--lc-spacing) * 28)}
+#lovable-landing .pl-2{padding-left:calc(var(--lc-spacing) * 2)}
+#lovable-landing .pl-2\.5{padding-left:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .pl-4{padding-left:calc(var(--lc-spacing) * 4)}
+#lovable-landing .pl-6{padding-left:calc(var(--lc-spacing) * 6)}
+#lovable-landing .pl-8{padding-left:calc(var(--lc-spacing) * 8)}
+#lovable-landing .text-center{text-align:center}
+#lovable-landing .text-left{text-align:left}
+#lovable-landing .align-middle{vertical-align:middle}
+#lovable-landing .font-display{font-family:Fraunces,Georgia,serif}
+#lovable-landing .font-mono{font-family:var(--lc-font-mono)}
+#lovable-landing .text-2xl{font-size:var(--lc-text-2xl);line-height:var(--lc-tw-leading,var(--lc-text-2xl--line-height))}
+#lovable-landing .text-3xl{font-size:var(--lc-text-3xl);line-height:var(--lc-tw-leading,var(--lc-text-3xl--line-height))}
+#lovable-landing .text-4xl{font-size:var(--lc-text-4xl);line-height:var(--lc-tw-leading,var(--lc-text-4xl--line-height))}
+#lovable-landing .text-5xl{font-size:var(--lc-text-5xl);line-height:var(--lc-tw-leading,var(--lc-text-5xl--line-height))}
+#lovable-landing .text-7xl{font-size:var(--lc-text-7xl);line-height:var(--lc-tw-leading,var(--lc-text-7xl--line-height))}
+#lovable-landing .text-base{font-size:var(--lc-text-base);line-height:var(--lc-tw-leading,var(--lc-text-base--line-height))}
+#lovable-landing .text-lg{font-size:var(--lc-text-lg);line-height:var(--lc-tw-leading,var(--lc-text-lg--line-height))}
+#lovable-landing .text-sm{font-size:var(--lc-text-sm);line-height:var(--lc-tw-leading,var(--lc-text-sm--line-height))}
+#lovable-landing .text-xl{font-size:var(--lc-text-xl);line-height:var(--lc-tw-leading,var(--lc-text-xl--line-height))}
+#lovable-landing .text-xs{font-size:var(--lc-text-xs);line-height:var(--lc-tw-leading,var(--lc-text-xs--line-height))}
+#lovable-landing .text-\[0\.7rem\]{font-size:.7rem}
+#lovable-landing .text-\[0\.8rem\]{font-size:.8rem}
+#lovable-landing .text-\[0\.65rem\]{font-size:.65rem}
+#lovable-landing .text-\[1\.05rem\]{font-size:1.05rem}
+#lovable-landing .leading-\[1\.05\]{--lc-tw-leading:1.05;line-height:1.05}
+#lovable-landing .leading-\[1\.85\]{--lc-tw-leading:1.85;line-height:1.85}
+#lovable-landing .leading-none{--lc-tw-leading:1;line-height:1}
+#lovable-landing .leading-relaxed{--lc-tw-leading:var(--lc-leading-relaxed);line-height:var(--lc-leading-relaxed)}
+#lovable-landing .leading-tight{--lc-tw-leading:var(--lc-leading-tight);line-height:var(--lc-leading-tight)}
+#lovable-landing .font-bold{--lc-tw-font-weight:var(--lc-font-weight-bold);font-weight:var(--lc-font-weight-bold)}
+#lovable-landing .font-medium{--lc-tw-font-weight:var(--lc-font-weight-medium);font-weight:var(--lc-font-weight-medium)}
+#lovable-landing .font-normal{--lc-tw-font-weight:var(--lc-font-weight-normal);font-weight:var(--lc-font-weight-normal)}
+#lovable-landing .font-semibold{--lc-tw-font-weight:var(--lc-font-weight-semibold);font-weight:var(--lc-font-weight-semibold)}
+#lovable-landing .tracking-tight{--lc-tw-tracking:var(--lc-tracking-tight);letter-spacing:var(--lc-tracking-tight)}
+#lovable-landing .tracking-wide{--lc-tw-tracking:var(--lc-tracking-wide);letter-spacing:var(--lc-tracking-wide)}
+#lovable-landing .tracking-widest{--lc-tw-tracking:var(--lc-tracking-widest);letter-spacing:var(--lc-tracking-widest)}
+#lovable-landing .break-words{overflow-wrap:break-word}
+#lovable-landing .whitespace-nowrap{white-space:nowrap}
+#lovable-landing .text-accent-foreground{color:var(--lc-accent-foreground)}
+#lovable-landing .text-card-foreground{color:var(--lc-card-foreground)}
+#lovable-landing .text-current{color:currentColor}
+#lovable-landing .text-destructive{color:var(--lc-destructive)}
+#lovable-landing .text-destructive-foreground{color:var(--lc-destructive-foreground)}
+#lovable-landing .text-foreground, #lovable-landing .text-foreground\/80{color:var(--lc-foreground)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .text-foreground\/80{color:color-mix(in oklab, var(--lc-foreground) 80%, transparent)}}
+#lovable-landing .text-foreground\/85{color:var(--lc-foreground)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .text-foreground\/85{color:color-mix(in oklab, var(--lc-foreground) 85%, transparent)}}
+#lovable-landing .text-muted-foreground{color:var(--lc-muted-foreground)}
+#lovable-landing .text-popover-foreground{color:var(--lc-popover-foreground)}
+#lovable-landing .text-primary{color:var(--lc-primary)}
+#lovable-landing .text-primary-foreground{color:var(--lc-primary-foreground)}
+#lovable-landing .text-secondary{color:var(--lc-secondary)}
+#lovable-landing .text-secondary-foreground{color:var(--lc-secondary-foreground)}
+#lovable-landing .text-white{color:var(--lc-color-white)}
+#lovable-landing .text-white\/75{color:#ffffffbf}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .text-white\/75{color:color-mix(in oklab, var(--lc-color-white) 75%, transparent)}}
+#lovable-landing .text-white\/85{color:#ffffffd9}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .text-white\/85{color:color-mix(in oklab, var(--lc-color-white) 85%, transparent)}}
+#lovable-landing .text-white\/90{color:#ffffffe6}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .text-white\/90{color:color-mix(in oklab, var(--lc-color-white) 90%, transparent)}}
+#lovable-landing .uppercase{text-transform:uppercase}
+#lovable-landing .tabular-nums{--lc-tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--lc-tw-ordinal,) var(--lc-tw-slashed-zero,) var(--lc-tw-numeric-figure,) var(--lc-tw-numeric-spacing,) var(--lc-tw-numeric-fraction,)}
+#lovable-landing .underline{text-decoration-line:underline}
+#lovable-landing .underline-offset-4{text-underline-offset:4px}
+#lovable-landing .opacity-0{opacity:0}
+#lovable-landing .opacity-50{opacity:.5}
+#lovable-landing .opacity-60{opacity:.6}
+#lovable-landing .opacity-70{opacity:.7}
+#lovable-landing .shadow{--lc-tw-shadow:0 1px 3px 0 var(--lc-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-\[0_0_0_1px_var\(--lc-sidebar-border\)\]{--lc-tw-shadow:0 0 0 1px var(--lc-tw-shadow-color,var(--lc-sidebar-border));box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-\[var\(--lc-shadow-lift\)\]{--lc-tw-shadow:var(--lc-shadow-lift);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-\[var\(--lc-shadow-paper\)\]{--lc-tw-shadow:var(--lc-shadow-paper);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-lg{--lc-tw-shadow:0 10px 15px -3px var(--lc-tw-shadow-color,#0000001a), 0 4px 6px -4px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-md{--lc-tw-shadow:0 4px 6px -1px var(--lc-tw-shadow-color,#0000001a), 0 2px 4px -2px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-none{--lc-tw-shadow:0 0 #0000;box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-sm{--lc-tw-shadow:0 1px 3px 0 var(--lc-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-xl{--lc-tw-shadow:0 20px 25px -5px var(--lc-tw-shadow-color,#0000001a), 0 8px 10px -6px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .shadow-xs{--lc-tw-shadow:0 1px 2px 0 var(--lc-tw-shadow-color,#0000000d);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .ring-0{--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(0px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .ring-1{--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(1px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .ring-ring{--lc-tw-ring-color:var(--lc-ring)}
+#lovable-landing .ring-offset-background{--lc-tw-ring-offset-color:var(--lc-background)}
+#lovable-landing .outline{outline-style:var(--lc-tw-outline-style);outline-width:1px}
+#lovable-landing .drop-shadow-\[0_18px_24px_rgba\(90\, #lovable-landing 70\, #lovable-landing 40\, #lovable-landing 0\.18\)\]{--lc-tw-drop-shadow-size:drop-shadow(0 18px 24px var(--lc-tw-drop-shadow-color,#5a46282e));--lc-tw-drop-shadow:var(--lc-tw-drop-shadow-size);filter:var(--lc-tw-blur,) var(--lc-tw-brightness,) var(--lc-tw-contrast,) var(--lc-tw-grayscale,) var(--lc-tw-hue-rotate,) var(--lc-tw-invert,) var(--lc-tw-saturate,) var(--lc-tw-sepia,) var(--lc-tw-drop-shadow,)}
+#lovable-landing .filter{filter:var(--lc-tw-blur,) var(--lc-tw-brightness,) var(--lc-tw-contrast,) var(--lc-tw-grayscale,) var(--lc-tw-hue-rotate,) var(--lc-tw-invert,) var(--lc-tw-saturate,) var(--lc-tw-sepia,) var(--lc-tw-drop-shadow,)}
+#lovable-landing .backdrop-blur{--lc-tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--lc-tw-backdrop-blur,) var(--lc-tw-backdrop-brightness,) var(--lc-tw-backdrop-contrast,) var(--lc-tw-backdrop-grayscale,) var(--lc-tw-backdrop-hue-rotate,) var(--lc-tw-backdrop-invert,) var(--lc-tw-backdrop-opacity,) var(--lc-tw-backdrop-saturate,) var(--lc-tw-backdrop-sepia,);backdrop-filter:var(--lc-tw-backdrop-blur,) var(--lc-tw-backdrop-brightness,) var(--lc-tw-backdrop-contrast,) var(--lc-tw-backdrop-grayscale,) var(--lc-tw-backdrop-hue-rotate,) var(--lc-tw-backdrop-invert,) var(--lc-tw-backdrop-opacity,) var(--lc-tw-backdrop-saturate,) var(--lc-tw-backdrop-sepia,)}
+#lovable-landing .transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--lc-tw-gradient-from,--lc-tw-gradient-via,--lc-tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter,display,content-visibility,overlay,pointer-events;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-\[left\, #lovable-landing right\, #lovable-landing width\]{transition-property:left,right,width;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-\[margin\, #lovable-landing opacity\]{transition-property:margin,opacity;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-\[width\, #lovable-landing height\, #lovable-landing padding\]{transition-property:width,height,padding;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-\[width\]{transition-property:width;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-all{transition-property:all;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--lc-tw-gradient-from,--lc-tw-gradient-via,--lc-tw-gradient-to;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-opacity{transition-property:opacity;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .transition-transform{transition-property:transform,translate,scale,rotate;transition-timing-function:var(--lc-tw-ease,var(--lc-default-transition-timing-function));transition-duration:var(--lc-tw-duration,var(--lc-default-transition-duration))}
+#lovable-landing .duration-200{--lc-tw-duration:.2s;transition-duration:.2s}
+#lovable-landing .duration-300{--lc-tw-duration:.3s;transition-duration:.3s}
+#lovable-landing .duration-1000{--lc-tw-duration:1s;transition-duration:1s}
+#lovable-landing .ease-in-out{--lc-tw-ease:var(--lc-ease-in-out);transition-timing-function:var(--lc-ease-in-out)}
+#lovable-landing .ease-linear{--lc-tw-ease:linear;transition-timing-function:linear}
+#lovable-landing .fade-in-0{--lc-tw-enter-opacity:0}
+#lovable-landing .outline-none{--lc-tw-outline-style:none;outline-style:none}
+#lovable-landing .select-none{-webkit-user-select:none;user-select:none}
+#lovable-landing .zoom-in-95{--lc-tw-enter-scale:.95}
+#lovable-landing .\[--lc-cell-size\:2rem\]{--lc-cell-size:2rem}
+#lovable-landing .group-focus-within\/menu-item\:opacity-100:is(:where(.group\/menu-item):focus-within *){opacity:1}
+@media  (hover:hover){#lovable-landing .group-hover\/menu-item\:opacity-100:is(:where(.group\/menu-item):hover *){opacity:1}}
+#lovable-landing .group-has-\[\[data-sidebar\=menu-action\]\]\/menu-item\:pr-8:is(:where(.group\/menu-item):has([data-sidebar=menu-action]) *){padding-right:calc(var(--lc-spacing) * 8)}
+#lovable-landing .group-data-\[collapsible\=icon\]\:-mt-8:is(:where(.group)[data-collapsible=icon] *){margin-top:calc(var(--lc-spacing) * -8)}
+#lovable-landing .group-data-\[collapsible\=icon\]\:hidden:is(:where(.group)[data-collapsible=icon] *){display:none}
+#lovable-landing .group-data-\[collapsible\=icon\]\:\!size-8:is(:where(.group)[data-collapsible=icon] *){width:calc(var(--lc-spacing) * 8)!important;height:calc(var(--lc-spacing) * 8)!important}
+#lovable-landing .group-data-\[collapsible\=icon\]\:w-\(--lc-sidebar-width-icon\):is(:where(.group)[data-collapsible=icon] *){width:var(--lc-sidebar-width-icon)}
+#lovable-landing .group-data-\[collapsible\=icon\]\:w-\[calc\(var\(--lc-sidebar-width-icon\)_\+_theme\(spacing\.4\)\)\]:is(:where(.group)[data-collapsible=icon] *){width:calc(var(--lc-sidebar-width-icon) + 1rem)}
+#lovable-landing .group-data-\[collapsible\=icon\]\:w-\[calc\(var\(--lc-sidebar-width-icon\)_\+_theme\(spacing\.4\)_\+2px\)\]:is(:where(.group)[data-collapsible=icon] *){width:calc(var(--lc-sidebar-width-icon) + 1rem + 2px)}
+#lovable-landing .group-data-\[collapsible\=icon\]\:overflow-hidden:is(:where(.group)[data-collapsible=icon] *){overflow:hidden}
+#lovable-landing .group-data-\[collapsible\=icon\]\:\!p-0:is(:where(.group)[data-collapsible=icon] *){padding:0!important}
+#lovable-landing .group-data-\[collapsible\=icon\]\:\!p-2:is(:where(.group)[data-collapsible=icon] *){padding:calc(var(--lc-spacing) * 2)!important}
+#lovable-landing .group-data-\[collapsible\=icon\]\:opacity-0:is(:where(.group)[data-collapsible=icon] *){opacity:0}
+#lovable-landing .group-data-\[collapsible\=offcanvas\]\:right-\[calc\(var\(--lc-sidebar-width\)\*-1\)\]:is(:where(.group)[data-collapsible=offcanvas] *){right:calc(var(--lc-sidebar-width) * -1)}
+#lovable-landing .group-data-\[collapsible\=offcanvas\]\:left-\[calc\(var\(--lc-sidebar-width\)\*-1\)\]:is(:where(.group)[data-collapsible=offcanvas] *){left:calc(var(--lc-sidebar-width) * -1)}
+#lovable-landing .group-data-\[collapsible\=offcanvas\]\:w-0:is(:where(.group)[data-collapsible=offcanvas] *){width:0}
+#lovable-landing .group-data-\[collapsible\=offcanvas\]\:translate-x-0:is(:where(.group)[data-collapsible=offcanvas] *){--lc-tw-translate-x:0px;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .group-data-\[focused\=true\]\/day\:relative:is(:where(.group\/day)[data-focused=true] *){position:relative}
+#lovable-landing .group-data-\[focused\=true\]\/day\:z-10:is(:where(.group\/day)[data-focused=true] *){z-index:10}
+#lovable-landing .group-data-\[focused\=true\]\/day\:border-ring:is(:where(.group\/day)[data-focused=true] *){border-color:var(--lc-ring)}
+#lovable-landing .group-data-\[focused\=true\]\/day\:ring-\[3px\]:is(:where(.group\/day)[data-focused=true] *){--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(3px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .group-data-\[focused\=true\]\/day\:ring-ring\/50:is(:where(.group\/day)[data-focused=true] *){--lc-tw-ring-color:var(--lc-ring)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .group-data-\[focused\=true\]\/day\:ring-ring\/50:is(:where(.group\/day)[data-focused=true] *){--lc-tw-ring-color:color-mix(in oklab, var(--lc-ring) 50%, transparent)}}
+#lovable-landing .group-data-\[side\=left\]\:-right-4:is(:where(.group)[data-side=left] *){right:calc(var(--lc-spacing) * -4)}
+#lovable-landing .group-data-\[side\=left\]\:border-r:is(:where(.group)[data-side=left] *){border-right-style:var(--lc-tw-border-style);border-right-width:1px}
+#lovable-landing .group-data-\[side\=right\]\:left-0:is(:where(.group)[data-side=right] *){left:0}
+#lovable-landing .group-data-\[side\=right\]\:rotate-180:is(:where(.group)[data-side=right] *){rotate:180deg}
+#lovable-landing .group-data-\[side\=right\]\:border-l:is(:where(.group)[data-side=right] *){border-left-style:var(--lc-tw-border-style);border-left-width:1px}
+#lovable-landing .group-data-\[state\=open\]\:rotate-180:is(:where(.group)[data-state=open] *){rotate:180deg}
+#lovable-landing .group-data-\[variant\=floating\]\:rounded-lg:is(:where(.group)[data-variant=floating] *){border-radius:var(--lc-radius)}
+#lovable-landing .group-data-\[variant\=floating\]\:border:is(:where(.group)[data-variant=floating] *){border-style:var(--lc-tw-border-style);border-width:1px}
+#lovable-landing .group-data-\[variant\=floating\]\:shadow:is(:where(.group)[data-variant=floating] *){--lc-tw-shadow:0 1px 3px 0 var(--lc-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .group-\[\.toast\]\:bg-muted:is(:where(.group).toast *){background-color:var(--lc-muted)}
+#lovable-landing .group-\[\.toast\]\:bg-primary:is(:where(.group).toast *){background-color:var(--lc-primary)}
+#lovable-landing .group-\[\.toast\]\:text-muted-foreground:is(:where(.group).toast *){color:var(--lc-muted-foreground)}
+#lovable-landing .group-\[\.toast\]\:text-primary-foreground:is(:where(.group).toast *){color:var(--lc-primary-foreground)}
+#lovable-landing .group-\[\.toaster\]\:border-border:is(:where(.group).toaster *){border-color:var(--lc-border)}
+#lovable-landing .group-\[\.toaster\]\:bg-background:is(:where(.group).toaster *){background-color:var(--lc-background)}
+#lovable-landing .group-\[\.toaster\]\:text-foreground:is(:where(.group).toaster *){color:var(--lc-foreground)}
+#lovable-landing .group-\[\.toaster\]\:shadow-lg:is(:where(.group).toaster *){--lc-tw-shadow:0 10px 15px -3px var(--lc-tw-shadow-color,#0000001a), 0 4px 6px -4px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .peer-disabled\:cursor-not-allowed:is(:where(.peer):disabled~*){cursor:not-allowed}
+#lovable-landing .peer-disabled\:opacity-70:is(:where(.peer):disabled~*){opacity:.7}
+#lovable-landing .peer-data-\[size\=default\]\/menu-button\:top-1\.5:is(:where(.peer\/menu-button)[data-size=default]~*){top:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .peer-data-\[size\=lg\]\/menu-button\:top-2\.5:is(:where(.peer\/menu-button)[data-size=lg]~*){top:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .peer-data-\[size\=sm\]\/menu-button\:top-1:is(:where(.peer\/menu-button)[data-size=sm]~*){top:var(--lc-spacing)}
+#lovable-landing .file\:border-0::file-selector-button{border-style:var(--lc-tw-border-style);border-width:0}
+#lovable-landing .file\:bg-transparent::file-selector-button{background-color:#0000}
+#lovable-landing .file\:text-sm::file-selector-button{font-size:var(--lc-text-sm);line-height:var(--lc-tw-leading,var(--lc-text-sm--line-height))}
+#lovable-landing .file\:font-medium::file-selector-button{--lc-tw-font-weight:var(--lc-font-weight-medium);font-weight:var(--lc-font-weight-medium)}
+#lovable-landing .file\:text-foreground::file-selector-button{color:var(--lc-foreground)}
+#lovable-landing .placeholder\:text-muted-foreground::placeholder{color:var(--lc-muted-foreground)}
+#lovable-landing .after\:absolute:after{content:var(--lc-tw-content);position:absolute}
+#lovable-landing .after\:-inset-2:after{content:var(--lc-tw-content);inset:calc(var(--lc-spacing) * -2)}
+#lovable-landing .after\:inset-y-0:after{content:var(--lc-tw-content);inset-block:0}
+#lovable-landing .after\:left-1\/2:after{content:var(--lc-tw-content);left:50%}
+#lovable-landing .after\:w-1:after{content:var(--lc-tw-content);width:var(--lc-spacing)}
+#lovable-landing .after\:w-\[2px\]:after{content:var(--lc-tw-content);width:2px}
+#lovable-landing .after\:-translate-x-1\/2:after{content:var(--lc-tw-content);--lc-tw-translate-x:calc(calc(1 / 2 * 100%) * -1);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .group-data-\[collapsible\=offcanvas\]\:after\:left-full:is(:where(.group)[data-collapsible=offcanvas] *):after{content:var(--lc-tw-content);left:100%}
+#lovable-landing .first\:rounded-l-md:first-child{border-top-left-radius:calc(var(--lc-radius) - 3px);border-bottom-left-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .first\:border-l:first-child{border-left-style:var(--lc-tw-border-style);border-left-width:1px}
+#lovable-landing .last\:rounded-r-md:last-child{border-top-right-radius:calc(var(--lc-radius) - 3px);border-bottom-right-radius:calc(var(--lc-radius) - 3px)}
+@media  (hover:hover){#lovable-landing .hover\:-translate-y-0\.5:hover{--lc-tw-translate-y:calc(var(--lc-spacing) * -.5);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .hover\:-translate-y-1:hover{--lc-tw-translate-y:calc(var(--lc-spacing) * -1);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .hover\:bg-accent:hover{background-color:var(--lc-accent)}
+#lovable-landing .hover\:bg-destructive\/80:hover{background-color:var(--lc-destructive)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .hover\:bg-destructive\/80:hover{background-color:color-mix(in oklab, var(--lc-destructive) 80%, transparent)}}
+#lovable-landing .hover\:bg-destructive\/90:hover{background-color:var(--lc-destructive)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .hover\:bg-destructive\/90:hover{background-color:color-mix(in oklab, var(--lc-destructive) 90%, transparent)}}
+#lovable-landing .hover\:bg-muted:hover, #lovable-landing .hover\:bg-muted\/50:hover{background-color:var(--lc-muted)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .hover\:bg-muted\/50:hover{background-color:color-mix(in oklab, var(--lc-muted) 50%, transparent)}}
+#lovable-landing .hover\:bg-primary\/80:hover{background-color:var(--lc-primary)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .hover\:bg-primary\/80:hover{background-color:color-mix(in oklab, var(--lc-primary) 80%, transparent)}}
+#lovable-landing .hover\:bg-primary\/90:hover{background-color:var(--lc-primary)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .hover\:bg-primary\/90:hover{background-color:color-mix(in oklab, var(--lc-primary) 90%, transparent)}}
+#lovable-landing .hover\:bg-secondary\/80:hover{background-color:var(--lc-secondary)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .hover\:bg-secondary\/80:hover{background-color:color-mix(in oklab, var(--lc-secondary) 80%, transparent)}}
+#lovable-landing .hover\:bg-white\/10:hover{background-color:#ffffff1a}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .hover\:bg-white\/10:hover{background-color:color-mix(in oklab, var(--lc-color-white) 10%, transparent)}}
+#lovable-landing .hover\:text-accent-foreground:hover{color:var(--lc-accent-foreground)}
+#lovable-landing .hover\:text-foreground:hover{color:var(--lc-foreground)}
+#lovable-landing .hover\:text-muted-foreground:hover{color:var(--lc-muted-foreground)}
+#lovable-landing .hover\:text-white:hover{color:var(--lc-color-white)}
+#lovable-landing .hover\:underline:hover{text-decoration-line:underline}
+#lovable-landing .hover\:opacity-70:hover{opacity:.7}
+#lovable-landing .hover\:opacity-100:hover{opacity:1}
+#lovable-landing .hover\:shadow-\[0_0_0_1px_var\(--lc-sidebar-accent\)\]:hover{--lc-tw-shadow:0 0 0 1px var(--lc-tw-shadow-color,var(--lc-sidebar-accent));box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}}
+#lovable-landing .focus\:border-ring:focus{border-color:var(--lc-ring)}
+#lovable-landing .focus\:bg-accent:focus{background-color:var(--lc-accent)}
+#lovable-landing .focus\:text-accent-foreground:focus{color:var(--lc-accent-foreground)}
+#lovable-landing .focus\:ring-1:focus{--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(1px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .focus\:ring-2:focus{--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(2px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .focus\:ring-ring:focus, #lovable-landing .focus\:ring-ring\/30:focus{--lc-tw-ring-color:var(--lc-ring)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .focus\:ring-ring\/30:focus{--lc-tw-ring-color:color-mix(in oklab, var(--lc-ring) 30%, transparent)}}
+#lovable-landing .focus\:ring-offset-2:focus{--lc-tw-ring-offset-width:2px;--lc-tw-ring-offset-shadow:var(--lc-tw-ring-inset,) 0 0 0 var(--lc-tw-ring-offset-width) var(--lc-tw-ring-offset-color)}
+#lovable-landing .focus\:outline-none:focus{--lc-tw-outline-style:none;outline-style:none}
+#lovable-landing .focus-visible\:ring-1:focus-visible{--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(1px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .focus-visible\:ring-2:focus-visible{--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(2px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .focus-visible\:ring-ring:focus-visible{--lc-tw-ring-color:var(--lc-ring)}
+#lovable-landing .focus-visible\:ring-offset-1:focus-visible{--lc-tw-ring-offset-width:1px;--lc-tw-ring-offset-shadow:var(--lc-tw-ring-inset,) 0 0 0 var(--lc-tw-ring-offset-width) var(--lc-tw-ring-offset-color)}
+#lovable-landing .focus-visible\:ring-offset-2:focus-visible{--lc-tw-ring-offset-width:2px;--lc-tw-ring-offset-shadow:var(--lc-tw-ring-inset,) 0 0 0 var(--lc-tw-ring-offset-width) var(--lc-tw-ring-offset-color)}
+#lovable-landing .focus-visible\:ring-offset-background:focus-visible{--lc-tw-ring-offset-color:var(--lc-background)}
+#lovable-landing .focus-visible\:outline-none:focus-visible{--lc-tw-outline-style:none;outline-style:none}
+#lovable-landing .disabled\:pointer-events-none:disabled{pointer-events:none}
+#lovable-landing .disabled\:cursor-not-allowed:disabled{cursor:not-allowed}
+#lovable-landing .disabled\:opacity-50:disabled{opacity:.5}
+#lovable-landing .has-focus\:border-ring:has(:focus){border-color:var(--lc-ring)}
+#lovable-landing .has-focus\:ring-\[3px\]:has(:focus){--lc-tw-ring-shadow:var(--lc-tw-ring-inset,) 0 0 0 calc(3px + var(--lc-tw-ring-offset-width)) var(--lc-tw-ring-color,currentcolor);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .has-focus\:ring-ring\/50:has(:focus){--lc-tw-ring-color:var(--lc-ring)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .has-focus\:ring-ring\/50:has(:focus){--lc-tw-ring-color:color-mix(in oklab, var(--lc-ring) 50%, transparent)}}
+#lovable-landing .has-\[\:disabled\]\:opacity-50:has(:disabled){opacity:.5}
+#lovable-landing .aria-disabled\:pointer-events-none[aria-disabled=true]{pointer-events:none}
+#lovable-landing .aria-disabled\:opacity-50[aria-disabled=true]{opacity:.5}
+#lovable-landing .aria-selected\:text-muted-foreground[aria-selected=true]{color:var(--lc-muted-foreground)}
+#lovable-landing .data-\[active\=true\]\:font-medium[data-active=true]{--lc-tw-font-weight:var(--lc-font-weight-medium);font-weight:var(--lc-font-weight-medium)}
+#lovable-landing .data-\[disabled\]\:pointer-events-none[data-disabled]{pointer-events:none}
+#lovable-landing .data-\[disabled\]\:opacity-50[data-disabled]{opacity:.5}
+#lovable-landing .data-\[disabled\=true\]\:pointer-events-none[data-disabled=true]{pointer-events:none}
+#lovable-landing .data-\[disabled\=true\]\:opacity-50[data-disabled=true]{opacity:.5}
+#lovable-landing .data-\[motion\=from-end\]\:slide-in-from-right-52[data-motion=from-end]{--lc-tw-enter-translate-x:calc(52*var(--lc-spacing))}
+#lovable-landing .data-\[motion\=from-start\]\:slide-in-from-left-52[data-motion=from-start]{--lc-tw-enter-translate-x:calc(52*var(--lc-spacing)*-1)}
+#lovable-landing .data-\[motion\=to-end\]\:slide-out-to-right-52[data-motion=to-end]{--lc-tw-exit-translate-x:calc(52*var(--lc-spacing))}
+#lovable-landing .data-\[motion\=to-start\]\:slide-out-to-left-52[data-motion=to-start]{--lc-tw-exit-translate-x:calc(52*var(--lc-spacing)*-1)}
+#lovable-landing .data-\[motion\^\=from-\]\:animate-in[data-motion^=from-]{animation:enter var(--lc-tw-animation-duration,var(--lc-tw-duration,.15s))var(--lc-tw-ease,ease)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[motion\^\=from-\]\:fade-in[data-motion^=from-]{--lc-tw-enter-opacity:0}
+#lovable-landing .data-\[motion\^\=to-\]\:animate-out[data-motion^=to-]{animation:exit var(--lc-tw-animation-duration,var(--lc-tw-duration,.15s))var(--lc-tw-ease,ease)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[motion\^\=to-\]\:fade-out[data-motion^=to-]{--lc-tw-exit-opacity:0}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:h-px[data-panel-group-direction=vertical]{height:1px}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:w-full[data-panel-group-direction=vertical]{width:100%}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:flex-col[data-panel-group-direction=vertical]{flex-direction:column}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:after\:left-0[data-panel-group-direction=vertical]:after{content:var(--lc-tw-content);left:0}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:after\:h-1[data-panel-group-direction=vertical]:after{content:var(--lc-tw-content);height:var(--lc-spacing)}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:after\:w-full[data-panel-group-direction=vertical]:after{content:var(--lc-tw-content);width:100%}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:after\:translate-x-0[data-panel-group-direction=vertical]:after{content:var(--lc-tw-content);--lc-tw-translate-x:0px;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[panel-group-direction\=vertical\]\:after\:-translate-y-1\/2[data-panel-group-direction=vertical]:after{content:var(--lc-tw-content);--lc-tw-translate-y:calc(calc(1 / 2 * 100%) * -1);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[placeholder\]\:text-muted-foreground[data-placeholder]{color:var(--lc-muted-foreground)}
+#lovable-landing .data-\[range-end\=true\]\:rounded-md[data-range-end=true]{border-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .data-\[range-end\=true\]\:bg-primary[data-range-end=true]{background-color:var(--lc-primary)}
+#lovable-landing .data-\[range-end\=true\]\:text-primary-foreground[data-range-end=true]{color:var(--lc-primary-foreground)}
+#lovable-landing .data-\[range-middle\=true\]\:rounded-none[data-range-middle=true]{border-radius:0}
+#lovable-landing .data-\[range-middle\=true\]\:bg-accent[data-range-middle=true]{background-color:var(--lc-accent)}
+#lovable-landing .data-\[range-middle\=true\]\:text-accent-foreground[data-range-middle=true]{color:var(--lc-accent-foreground)}
+#lovable-landing .data-\[range-start\=true\]\:rounded-md[data-range-start=true]{border-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .data-\[range-start\=true\]\:bg-primary[data-range-start=true]{background-color:var(--lc-primary)}
+#lovable-landing .data-\[range-start\=true\]\:text-primary-foreground[data-range-start=true]{color:var(--lc-primary-foreground)}
+#lovable-landing .data-\[selected-single\=true\]\:bg-primary[data-selected-single=true]{background-color:var(--lc-primary)}
+#lovable-landing .data-\[selected-single\=true\]\:text-primary-foreground[data-selected-single=true]{color:var(--lc-primary-foreground)}
+#lovable-landing .data-\[selected\=true\]\:rounded-none[data-selected=true]{border-radius:0}
+#lovable-landing .data-\[selected\=true\]\:bg-accent[data-selected=true]{background-color:var(--lc-accent)}
+#lovable-landing .data-\[selected\=true\]\:text-accent-foreground[data-selected=true]{color:var(--lc-accent-foreground)}
+#lovable-landing .data-\[side\=bottom\]\:translate-y-1[data-side=bottom]{--lc-tw-translate-y:var(--lc-spacing);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[side\=bottom\]\:slide-in-from-top-2[data-side=bottom]{--lc-tw-enter-translate-y:calc(2*var(--lc-spacing)*-1)}
+#lovable-landing .data-\[side\=left\]\:-translate-x-1[data-side=left]{--lc-tw-translate-x:calc(var(--lc-spacing) * -1);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[side\=left\]\:slide-in-from-right-2[data-side=left]{--lc-tw-enter-translate-x:calc(2*var(--lc-spacing))}
+#lovable-landing .data-\[side\=right\]\:translate-x-1[data-side=right]{--lc-tw-translate-x:var(--lc-spacing);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[side\=right\]\:slide-in-from-left-2[data-side=right]{--lc-tw-enter-translate-x:calc(2*var(--lc-spacing)*-1)}
+#lovable-landing .data-\[side\=top\]\:-translate-y-1[data-side=top]{--lc-tw-translate-y:calc(var(--lc-spacing) * -1);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[side\=top\]\:slide-in-from-bottom-2[data-side=top]{--lc-tw-enter-translate-y:calc(2*var(--lc-spacing))}
+#lovable-landing .data-\[state\=active\]\:bg-background[data-state=active]{background-color:var(--lc-background)}
+#lovable-landing .data-\[state\=active\]\:text-foreground[data-state=active]{color:var(--lc-foreground)}
+#lovable-landing .data-\[state\=active\]\:shadow[data-state=active]{--lc-tw-shadow:0 1px 3px 0 var(--lc-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .data-\[state\=checked\]\:translate-x-4[data-state=checked]{--lc-tw-translate-x:calc(var(--lc-spacing) * 4);translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[state\=checked\]\:bg-primary[data-state=checked]{background-color:var(--lc-primary)}
+#lovable-landing .data-\[state\=checked\]\:text-primary-foreground[data-state=checked]{color:var(--lc-primary-foreground)}
+#lovable-landing .data-\[state\=closed\]\:animate-accordion-up[data-state=closed]{animation:accordion-up var(--lc-tw-animation-duration,var(--lc-tw-duration,.2s))var(--lc-tw-ease,ease-out)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[state\=closed\]\:animate-out[data-state=closed]{animation:exit var(--lc-tw-animation-duration,var(--lc-tw-duration,.15s))var(--lc-tw-ease,ease)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[state\=closed\]\:duration-300[data-state=closed]{--lc-tw-duration:.3s;transition-duration:.3s}
+#lovable-landing .data-\[state\=closed\]\:fade-out-0[data-state=closed]{--lc-tw-exit-opacity:0}
+#lovable-landing .data-\[state\=closed\]\:zoom-out-95[data-state=closed]{--lc-tw-exit-scale:.95}
+#lovable-landing .data-\[state\=closed\]\:slide-out-to-bottom[data-state=closed]{--lc-tw-exit-translate-y:100%}
+#lovable-landing .data-\[state\=closed\]\:slide-out-to-left[data-state=closed]{--lc-tw-exit-translate-x:-100%}
+#lovable-landing .data-\[state\=closed\]\:slide-out-to-right[data-state=closed]{--lc-tw-exit-translate-x:100%}
+#lovable-landing .data-\[state\=closed\]\:slide-out-to-top[data-state=closed]{--lc-tw-exit-translate-y:-100%}
+#lovable-landing .data-\[state\=hidden\]\:animate-out[data-state=hidden]{animation:exit var(--lc-tw-animation-duration,var(--lc-tw-duration,.15s))var(--lc-tw-ease,ease)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[state\=hidden\]\:fade-out[data-state=hidden]{--lc-tw-exit-opacity:0}
+#lovable-landing .data-\[state\=on\]\:bg-accent[data-state=on]{background-color:var(--lc-accent)}
+#lovable-landing .data-\[state\=on\]\:text-accent-foreground[data-state=on]{color:var(--lc-accent-foreground)}
+#lovable-landing .data-\[state\=open\]\:animate-accordion-down[data-state=open]{animation:accordion-down var(--lc-tw-animation-duration,var(--lc-tw-duration,.2s))var(--lc-tw-ease,ease-out)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[state\=open\]\:animate-in[data-state=open]{animation:enter var(--lc-tw-animation-duration,var(--lc-tw-duration,.15s))var(--lc-tw-ease,ease)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[state\=open\]\:bg-accent[data-state=open], #lovable-landing .data-\[state\=open\]\:bg-accent\/50[data-state=open]{background-color:var(--lc-accent)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .data-\[state\=open\]\:bg-accent\/50[data-state=open]{background-color:color-mix(in oklab, var(--lc-accent) 50%, transparent)}}
+#lovable-landing .data-\[state\=open\]\:bg-secondary[data-state=open]{background-color:var(--lc-secondary)}
+#lovable-landing .data-\[state\=open\]\:text-accent-foreground[data-state=open]{color:var(--lc-accent-foreground)}
+#lovable-landing .data-\[state\=open\]\:text-muted-foreground[data-state=open]{color:var(--lc-muted-foreground)}
+#lovable-landing .data-\[state\=open\]\:opacity-100[data-state=open]{opacity:1}
+#lovable-landing .data-\[state\=open\]\:duration-500[data-state=open]{--lc-tw-duration:.5s;transition-duration:.5s}
+#lovable-landing .data-\[state\=open\]\:fade-in-0[data-state=open]{--lc-tw-enter-opacity:0}
+#lovable-landing .data-\[state\=open\]\:zoom-in-90[data-state=open]{--lc-tw-enter-scale:.9}
+#lovable-landing .data-\[state\=open\]\:zoom-in-95[data-state=open]{--lc-tw-enter-scale:.95}
+#lovable-landing .data-\[state\=open\]\:slide-in-from-bottom[data-state=open]{--lc-tw-enter-translate-y:100%}
+#lovable-landing .data-\[state\=open\]\:slide-in-from-left[data-state=open]{--lc-tw-enter-translate-x:-100%}
+#lovable-landing .data-\[state\=open\]\:slide-in-from-right[data-state=open]{--lc-tw-enter-translate-x:100%}
+#lovable-landing .data-\[state\=open\]\:slide-in-from-top[data-state=open]{--lc-tw-enter-translate-y:-100%}
+@media  (hover:hover){#lovable-landing .data-\[state\=open\]\:hover\:bg-accent[data-state=open]:hover{background-color:var(--lc-accent)}}
+#lovable-landing .data-\[state\=open\]\:focus\:bg-accent[data-state=open]:focus{background-color:var(--lc-accent)}
+#lovable-landing .data-\[state\=selected\]\:bg-muted[data-state=selected]{background-color:var(--lc-muted)}
+#lovable-landing .data-\[state\=unchecked\]\:translate-x-0[data-state=unchecked]{--lc-tw-translate-x:0px;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .data-\[state\=unchecked\]\:bg-input[data-state=unchecked]{background-color:var(--lc-input)}
+#lovable-landing .data-\[state\=visible\]\:animate-in[data-state=visible]{animation:enter var(--lc-tw-animation-duration,var(--lc-tw-duration,.15s))var(--lc-tw-ease,ease)var(--lc-tw-animation-delay,0s)var(--lc-tw-animation-iteration-count,1)var(--lc-tw-animation-direction,normal)var(--lc-tw-animation-fill-mode,none)}
+#lovable-landing .data-\[state\=visible\]\:fade-in[data-state=visible]{--lc-tw-enter-opacity:0}
+@media  (width>=40rem){#lovable-landing .sm\:mt-0{margin-top:0}
+#lovable-landing .sm\:block{display:block}
+#lovable-landing .sm\:flex{display:flex}
+#lovable-landing .sm\:w-40{width:calc(var(--lc-spacing) * 40)}
+#lovable-landing .sm\:w-72{width:calc(var(--lc-spacing) * 72)}
+#lovable-landing .sm\:w-80{width:calc(var(--lc-spacing) * 80)}
+#lovable-landing .sm\:max-w-sm{max-width:var(--lc-container-sm)}
+#lovable-landing .sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+#lovable-landing .sm\:flex-row{flex-direction:row}
+#lovable-landing .sm\:justify-end{justify-content:flex-end}
+#lovable-landing .sm\:gap-2\.5{gap:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .sm\:gap-6{gap:calc(var(--lc-spacing) * 6)}
+#lovable-landing :where(.sm\:space-x-2>:not(:last-child)){--lc-tw-space-x-reverse:0;margin-inline-start:calc(calc(var(--lc-spacing) * 2) * var(--lc-tw-space-x-reverse));margin-inline-end:calc(calc(var(--lc-spacing) * 2) * calc(1 - var(--lc-tw-space-x-reverse)))}
+#lovable-landing .sm\:rounded-lg{border-radius:var(--lc-radius)}
+#lovable-landing .sm\:p-12{padding:calc(var(--lc-spacing) * 12)}
+#lovable-landing .sm\:text-left{text-align:left}
+#lovable-landing .sm\:text-5xl{font-size:var(--lc-text-5xl);line-height:var(--lc-tw-leading,var(--lc-text-5xl--line-height))}
+#lovable-landing .sm\:text-6xl{font-size:var(--lc-text-6xl);line-height:var(--lc-tw-leading,var(--lc-text-6xl--line-height))}}
+@media  (width>=48rem){#lovable-landing .md\:absolute{position:absolute}
+#lovable-landing .md\:block{display:block}
+#lovable-landing .md\:flex{display:flex}
+#lovable-landing .md\:w-\[var\(--lc-radix-navigation-menu-viewport-width\)\]{width:var(--lc-radix-navigation-menu-viewport-width)}
+#lovable-landing .md\:w-auto{width:auto}
+#lovable-landing .md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+#lovable-landing .md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+#lovable-landing .md\:grid-cols-\[1\.4fr_1fr_1fr\]{grid-template-columns:1.4fr 1fr 1fr}
+#lovable-landing .md\:flex-row{flex-direction:row}
+#lovable-landing .md\:text-sm{font-size:var(--lc-text-sm);line-height:var(--lc-tw-leading,var(--lc-text-sm--line-height))}
+#lovable-landing .md\:opacity-0{opacity:0}
+#lovable-landing .md\:peer-data-\[variant\=inset\]\:m-2:is(:where(.peer)[data-variant=inset]~*){margin:calc(var(--lc-spacing) * 2)}
+#lovable-landing .md\:peer-data-\[variant\=inset\]\:ml-0:is(:where(.peer)[data-variant=inset]~*){margin-left:0}
+#lovable-landing .md\:peer-data-\[variant\=inset\]\:rounded-xl:is(:where(.peer)[data-variant=inset]~*){border-radius:calc(var(--lc-radius) + 6px)}
+#lovable-landing .md\:peer-data-\[variant\=inset\]\:shadow:is(:where(.peer)[data-variant=inset]~*){--lc-tw-shadow:0 1px 3px 0 var(--lc-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--lc-tw-shadow-color,#0000001a);box-shadow:var(--lc-tw-inset-shadow), var(--lc-tw-inset-ring-shadow), var(--lc-tw-ring-offset-shadow), var(--lc-tw-ring-shadow), var(--lc-tw-shadow)}
+#lovable-landing .md\:peer-data-\[state\=collapsed\]\:peer-data-\[variant\=inset\]\:ml-2:is(:where(.peer)[data-state=collapsed]~*):is(:where(.peer)[data-variant=inset]~*){margin-left:calc(var(--lc-spacing) * 2)}}
+#lovable-landing .after\:md\:hidden:after{content:var(--lc-tw-content)}
+@media  (width>=48rem){#lovable-landing .after\:md\:hidden:after{display:none}}
+@media  (width>=64rem){#lovable-landing .lg\:w-80{width:calc(var(--lc-spacing) * 80)}
+#lovable-landing .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+#lovable-landing .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+#lovable-landing .lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+#lovable-landing .lg\:grid-cols-\[0\.7fr_1\.3fr\]{grid-template-columns:.7fr 1.3fr}
+#lovable-landing .lg\:grid-cols-\[0\.9fr_1\.1fr\]{grid-template-columns:.9fr 1.1fr}
+#lovable-landing .lg\:grid-cols-\[1\.3fr_0\.7fr\]{grid-template-columns:1.3fr .7fr}
+#lovable-landing .lg\:grid-cols-\[1\.15fr_0\.85fr\]{grid-template-columns:1.15fr .85fr}
+#lovable-landing .lg\:grid-cols-\[240px_1fr_320px\]{grid-template-columns:240px 1fr 320px}
+#lovable-landing .lg\:justify-end{justify-content:flex-end}
+#lovable-landing .lg\:p-14{padding:calc(var(--lc-spacing) * 14)}
+#lovable-landing .lg\:pt-20{padding-top:calc(var(--lc-spacing) * 20)}
+#lovable-landing .lg\:text-7xl{font-size:var(--lc-text-7xl);line-height:var(--lc-tw-leading,var(--lc-text-7xl--line-height))}}
+#lovable-landing .dark\:border-destructive:is(.dark *){border-color:var(--lc-destructive)}
+#lovable-landing .\[\&_\.recharts-cartesian-axis-tick_text\]\:fill-muted-foreground .recharts-cartesian-axis-tick text{fill:var(--lc-muted-foreground)}
+#lovable-landing .\[\&_\.recharts-cartesian-grid_line\[stroke\=\'\#ccc\'\]\]\:stroke-border\/50 .recharts-cartesian-grid line[stroke=\#ccc]{stroke:var(--lc-border)}
+@supports  (color:color-mix(in lab, red, red)){#lovable-landing .\[\&_\.recharts-cartesian-grid_line\[stroke\=\'\#ccc\'\]\]\:stroke-border\/50 .recharts-cartesian-grid line[stroke=\#ccc]{stroke:color-mix(in oklab, var(--lc-border) 50%, transparent)}}
+#lovable-landing .\[\&_\.recharts-curve\.recharts-tooltip-cursor\]\:stroke-border .recharts-curve.recharts-tooltip-cursor{stroke:var(--lc-border)}
+#lovable-landing .\[\&_\.recharts-dot\[stroke\=\'\#fff\'\]\]\:stroke-transparent .recharts-dot[stroke=\#fff]{stroke:#0000}
+#lovable-landing .\[\&_\.recharts-layer\]\:outline-none .recharts-layer{--lc-tw-outline-style:none;outline-style:none}
+#lovable-landing .\[\&_\.recharts-polar-grid_\[stroke\=\'\#ccc\'\]\]\:stroke-border .recharts-polar-grid [stroke=\#ccc]{stroke:var(--lc-border)}
+#lovable-landing .\[\&_\.recharts-radial-bar-background-sector\]\:fill-muted .recharts-radial-bar-background-sector, #lovable-landing .\[\&_\.recharts-rectangle\.recharts-tooltip-cursor\]\:fill-muted .recharts-rectangle.recharts-tooltip-cursor{fill:var(--lc-muted)}
+#lovable-landing .\[\&_\.recharts-reference-line_\[stroke\=\'\#ccc\'\]\]\:stroke-border .recharts-reference-line [stroke=\#ccc]{stroke:var(--lc-border)}
+#lovable-landing .\[\&_\.recharts-sector\]\:outline-none .recharts-sector{--lc-tw-outline-style:none;outline-style:none}
+#lovable-landing .\[\&_\.recharts-sector\[stroke\=\'\#fff\'\]\]\:stroke-transparent .recharts-sector[stroke=\#fff]{stroke:#0000}
+#lovable-landing .\[\&_\.recharts-surface\]\:outline-none .recharts-surface{--lc-tw-outline-style:none;outline-style:none}
+#lovable-landing .\[\&_\[cmdk-group-heading\]\]\:px-2 [cmdk-group-heading]{padding-inline:calc(var(--lc-spacing) * 2)}
+#lovable-landing .\[\&_\[cmdk-group-heading\]\]\:py-1\.5 [cmdk-group-heading]{padding-block:calc(var(--lc-spacing) * 1.5)}
+#lovable-landing .\[\&_\[cmdk-group-heading\]\]\:text-xs [cmdk-group-heading]{font-size:var(--lc-text-xs);line-height:var(--lc-tw-leading,var(--lc-text-xs--line-height))}
+#lovable-landing .\[\&_\[cmdk-group-heading\]\]\:font-medium [cmdk-group-heading]{--lc-tw-font-weight:var(--lc-font-weight-medium);font-weight:var(--lc-font-weight-medium)}
+#lovable-landing .\[\&_\[cmdk-group-heading\]\]\:text-muted-foreground [cmdk-group-heading]{color:var(--lc-muted-foreground)}
+#lovable-landing .\[\&_\[cmdk-group\]\]\:px-2 [cmdk-group]{padding-inline:calc(var(--lc-spacing) * 2)}
+#lovable-landing .\[\&_\[cmdk-group\]\:not\(\[hidden\]\)_\~\[cmdk-group\]\]\:pt-0 [cmdk-group]:not([hidden])~[cmdk-group]{padding-top:0}
+#lovable-landing .\[\&_\[cmdk-input-wrapper\]_svg\]\:h-5 [cmdk-input-wrapper] svg{height:calc(var(--lc-spacing) * 5)}
+#lovable-landing .\[\&_\[cmdk-input-wrapper\]_svg\]\:w-5 [cmdk-input-wrapper] svg{width:calc(var(--lc-spacing) * 5)}
+#lovable-landing .\[\&_\[cmdk-input\]\]\:h-12 [cmdk-input]{height:calc(var(--lc-spacing) * 12)}
+#lovable-landing .\[\&_\[cmdk-item\]\]\:px-2 [cmdk-item]{padding-inline:calc(var(--lc-spacing) * 2)}
+#lovable-landing .\[\&_\[cmdk-item\]\]\:py-3 [cmdk-item]{padding-block:calc(var(--lc-spacing) * 3)}
+#lovable-landing .\[\&_\[cmdk-item\]_svg\]\:h-5 [cmdk-item] svg{height:calc(var(--lc-spacing) * 5)}
+#lovable-landing .\[\&_\[cmdk-item\]_svg\]\:w-5 [cmdk-item] svg{width:calc(var(--lc-spacing) * 5)}
+#lovable-landing .\[\&_p\]\:leading-relaxed p{--lc-tw-leading:var(--lc-leading-relaxed);line-height:var(--lc-leading-relaxed)}
+#lovable-landing .\[\&_svg\]\:pointer-events-none svg{pointer-events:none}
+#lovable-landing .\[\&_svg\]\:size-4 svg{width:calc(var(--lc-spacing) * 4);height:calc(var(--lc-spacing) * 4)}
+#lovable-landing .\[\&_svg\]\:shrink-0 svg{flex-shrink:0}
+#lovable-landing .\[\&_tr\]\:border-b tr{border-bottom-style:var(--lc-tw-border-style);border-bottom-width:1px}
+#lovable-landing .\[\&_tr\:last-child\]\:border-0 tr:last-child{border-style:var(--lc-tw-border-style);border-width:0}
+#lovable-landing .\[\&\:first-child\[data-selected\=true\]_button\]\:rounded-l-md:first-child[data-selected=true] button{border-top-left-radius:calc(var(--lc-radius) - 3px);border-bottom-left-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .\[\&\:has\(\[role\=checkbox\]\)\]\:pr-0:has([role=checkbox]){padding-right:0}
+#lovable-landing :is(.rtl\:\*\*\:\[\.rdp-button\\_next\>svg\]\:rotate-180:where(:is(:lang(ae), #lovable-landing :lang(ar), #lovable-landing :lang(arc), #lovable-landing :lang(bcc), #lovable-landing :lang(bqi), #lovable-landing :lang(ckb), #lovable-landing :lang(dv), #lovable-landing :lang(fa), #lovable-landing :lang(glk), #lovable-landing :lang(he), #lovable-landing :lang(ku), #lovable-landing :lang(mzn), #lovable-landing :lang(nqo), #lovable-landing :lang(pnb), #lovable-landing :lang(ps), #lovable-landing :lang(sd), #lovable-landing :lang(ug), #lovable-landing :lang(ur), #lovable-landing :lang(yi)), #lovable-landing [dir=rtl], #lovable-landing [dir=rtl] *) *):is(.rdp-button_next>svg), #lovable-landing :is(.rtl\:\*\*\:\[\.rdp-button\\_previous\>svg\]\:rotate-180:where(:is(:lang(ae), #lovable-landing :lang(ar), #lovable-landing :lang(arc), #lovable-landing :lang(bcc), #lovable-landing :lang(bqi), #lovable-landing :lang(ckb), #lovable-landing :lang(dv), #lovable-landing :lang(fa), #lovable-landing :lang(glk), #lovable-landing :lang(he), #lovable-landing :lang(ku), #lovable-landing :lang(mzn), #lovable-landing :lang(nqo), #lovable-landing :lang(pnb), #lovable-landing :lang(ps), #lovable-landing :lang(sd), #lovable-landing :lang(ug), #lovable-landing :lang(ur), #lovable-landing :lang(yi)), #lovable-landing [dir=rtl], #lovable-landing [dir=rtl] *) *):is(.rdp-button_previous>svg){rotate:180deg}
+#lovable-landing .\[\&\:last-child\[data-selected\=true\]_button\]\:rounded-r-md:last-child[data-selected=true] button{border-top-right-radius:calc(var(--lc-radius) - 3px);border-bottom-right-radius:calc(var(--lc-radius) - 3px)}
+#lovable-landing .\[\&\>\[role\=checkbox\]\]\:translate-y-\[2px\]>[role=checkbox]{--lc-tw-translate-y:2px;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .\[\&\>button\]\:hidden>button{display:none}
+#lovable-landing .\[\&\>span\]\:line-clamp-1>span{-webkit-line-clamp:1;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}
+#lovable-landing .\[\&\>span\]\:text-xs>span{font-size:var(--lc-text-xs);line-height:var(--lc-tw-leading,var(--lc-text-xs--line-height))}
+#lovable-landing .\[\&\>span\]\:opacity-70>span{opacity:.7}
+#lovable-landing .\[\&\>span\:last-child\]\:truncate>span:last-child{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+#lovable-landing .\[\&\>svg\]\:absolute>svg{position:absolute}
+#lovable-landing .\[\&\>svg\]\:top-4>svg{top:calc(var(--lc-spacing) * 4)}
+#lovable-landing .\[\&\>svg\]\:left-4>svg{left:calc(var(--lc-spacing) * 4)}
+#lovable-landing .\[\&\>svg\]\:size-3\.5>svg{width:calc(var(--lc-spacing) * 3.5);height:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .\[\&\>svg\]\:size-4>svg{width:calc(var(--lc-spacing) * 4);height:calc(var(--lc-spacing) * 4)}
+#lovable-landing .\[\&\>svg\]\:h-2\.5>svg{height:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .\[\&\>svg\]\:h-3>svg{height:calc(var(--lc-spacing) * 3)}
+#lovable-landing .\[\&\>svg\]\:h-3\.5>svg{height:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .\[\&\>svg\]\:w-2\.5>svg{width:calc(var(--lc-spacing) * 2.5)}
+#lovable-landing .\[\&\>svg\]\:w-3>svg{width:calc(var(--lc-spacing) * 3)}
+#lovable-landing .\[\&\>svg\]\:w-3\.5>svg{width:calc(var(--lc-spacing) * 3.5)}
+#lovable-landing .\[\&\>svg\]\:shrink-0>svg{flex-shrink:0}
+#lovable-landing .\[\&\>svg\]\:text-destructive>svg{color:var(--lc-destructive)}
+#lovable-landing .\[\&\>svg\]\:text-foreground>svg{color:var(--lc-foreground)}
+#lovable-landing .\[\&\>svg\]\:text-muted-foreground>svg{color:var(--lc-muted-foreground)}
+#lovable-landing .\[\&\>svg\+div\]\:translate-y-\[-3px\]>svg+div{--lc-tw-translate-y:-3px;translate:var(--lc-tw-translate-x) var(--lc-tw-translate-y)}
+#lovable-landing .\[\&\>svg\~\*\]\:pl-7>svg~*{padding-left:calc(var(--lc-spacing) * 7)}
+#lovable-landing .\[\&\>tr\]\:last\:border-b-0>tr:last-child{border-bottom-style:var(--lc-tw-border-style);border-bottom-width:0}
+#lovable-landing .\[\&\[data-panel-group-direction\=vertical\]\>div\]\:rotate-90[data-panel-group-direction=vertical]>div{rotate:90deg}
+#lovable-landing .\[\&\[data-state\=open\]\>svg\]\:rotate-180[data-state=open]>svg{rotate:180deg}
+#lovable-landing [data-side=left] .\[\[data-side\=left\]_\&\]\:cursor-w-resize{cursor:w-resize}
+#lovable-landing [data-side=left][data-collapsible=offcanvas] .\[\[data-side\=left\]\[data-collapsible\=offcanvas\]_\&\]\:-right-2{right:calc(var(--lc-spacing) * -2)}
+#lovable-landing [data-side=left][data-state=collapsed] .\[\[data-side\=left\]\[data-state\=collapsed\]_\&\]\:cursor-e-resize, #lovable-landing [data-side=right] .\[\[data-side\=right\]_\&\]\:cursor-e-resize{cursor:e-resize}
+#lovable-landing [data-side=right][data-collapsible=offcanvas] .\[\[data-side\=right\]\[data-collapsible\=offcanvas\]_\&\]\:-left-2{left:calc(var(--lc-spacing) * -2)}
+#lovable-landing [data-side=right][data-state=collapsed] .\[\[data-side\=right\]\[data-state\=collapsed\]_\&\]\:cursor-w-resize{cursor:w-resize}
+#lovable-landing [data-slot=card-content] .\[\[data-slot\=card-content\]_\&\]\:bg-transparent, #lovable-landing [data-slot=popover-content] .\[\[data-slot\=popover-content\]_\&\]\:bg-transparent{background-color:#0000}
+@property --lc-tw-animation-delay{syntax:"*";inherits:false;initial-value:0s}
+@property --lc-tw-animation-direction{syntax:"*";inherits:false;initial-value:normal}
+@property --lc-tw-animation-duration{syntax:"*";inherits:false}
+@property --lc-tw-animation-fill-mode{syntax:"*";inherits:false;initial-value:none}
+@property --lc-tw-animation-iteration-count{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-enter-blur{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-enter-opacity{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-enter-rotate{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-enter-scale{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-enter-translate-x{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-enter-translate-y{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-exit-blur{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-exit-opacity{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-exit-rotate{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-exit-scale{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-exit-translate-x{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-exit-translate-y{syntax:"*";inherits:false;initial-value:0}
+#lovable-landing{--lc-radius:1.25rem;--lc-background:oklch(98.2% .012 88);--lc-foreground:oklch(27% .018 45);--lc-card:oklch(99.5% .006 90);--lc-card-foreground:oklch(27% .018 45);--lc-popover:oklch(99.5% .006 90);--lc-popover-foreground:oklch(27% .018 45);--lc-primary:oklch(58% .185 5);--lc-primary-foreground:oklch(99% .008 90);--lc-secondary:oklch(60% .155 148);--lc-secondary-foreground:oklch(99% .008 90);--lc-muted:oklch(95.5% .018 90);--lc-muted-foreground:oklch(50% .02 60);--lc-accent:oklch(90% .055 55);--lc-accent-foreground:oklch(32% .03 45);--lc-destructive:oklch(62% .16 35);--lc-destructive-foreground:oklch(99% .008 90);--lc-border:oklch(90% .018 80);--lc-input:oklch(90% .018 80);--lc-ring:oklch(72% .09 12);--lc-ivory:oklch(97.5% .016 92);--lc-cream:oklch(95.5% .028 88);--lc-peach:oklch(90% .055 55);--lc-sage:oklch(79% .038 145);--lc-olive:oklch(71% .07 120);--lc-pink:oklch(70% .13 8);--lc-green:oklch(60% .155 148);--lc-shadow-paper:0 1px 2px oklch(40% .03 60/.05), 0 18px 40px -20px oklch(45% .04 40/.22);--lc-shadow-lift:0 24px 60px -28px oklch(45% .05 20/.32);--lc-gradient-warm:linear-gradient(135deg, var(--lc-cream), var(--lc-peach));--lc-gradient-hero-veil:linear-gradient(to bottom, oklch(28% .02 45/.62), oklch(40% .03 40/.34) 45%, oklch(98.2% .012 88/.94) 100%)}
+@keyframes cari-float{0%,to{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes cari-wave{0%,to{transform:rotate(-3deg)translateY(0)}50%{transform:rotate(3deg)translateY(-6px)}}
+@property --lc-tw-translate-x{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-translate-y{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-translate-z{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-scale-x{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-scale-y{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-scale-z{syntax:"*";inherits:false;initial-value:1}
+@property --lc-tw-rotate-x{syntax:"*";inherits:false}
+@property --lc-tw-rotate-y{syntax:"*";inherits:false}
+@property --lc-tw-rotate-z{syntax:"*";inherits:false}
+@property --lc-tw-skew-x{syntax:"*";inherits:false}
+@property --lc-tw-skew-y{syntax:"*";inherits:false}
+@property --lc-tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-space-x-reverse{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-divide-y-reverse{syntax:"*";inherits:false;initial-value:0}
+@property --lc-tw-border-style{syntax:"*";inherits:false;initial-value:solid}
+@property --lc-tw-leading{syntax:"*";inherits:false}
+@property --lc-tw-font-weight{syntax:"*";inherits:false}
+@property --lc-tw-tracking{syntax:"*";inherits:false}
+@property --lc-tw-ordinal{syntax:"*";inherits:false}
+@property --lc-tw-slashed-zero{syntax:"*";inherits:false}
+@property --lc-tw-numeric-figure{syntax:"*";inherits:false}
+@property --lc-tw-numeric-spacing{syntax:"*";inherits:false}
+@property --lc-tw-numeric-fraction{syntax:"*";inherits:false}
+@property --lc-tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
+@property --lc-tw-shadow-color{syntax:"*";inherits:false}
+@property --lc-tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}
+@property --lc-tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
+@property --lc-tw-inset-shadow-color{syntax:"*";inherits:false}
+@property --lc-tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}
+@property --lc-tw-ring-color{syntax:"*";inherits:false}
+@property --lc-tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
+@property --lc-tw-inset-ring-color{syntax:"*";inherits:false}
+@property --lc-tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
+@property --lc-tw-ring-inset{syntax:"*";inherits:false}
+@property --lc-tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}
+@property --lc-tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}
+@property --lc-tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
+@property --lc-tw-outline-style{syntax:"*";inherits:false;initial-value:solid}
+@property --lc-tw-blur{syntax:"*";inherits:false}
+@property --lc-tw-brightness{syntax:"*";inherits:false}
+@property --lc-tw-contrast{syntax:"*";inherits:false}
+@property --lc-tw-grayscale{syntax:"*";inherits:false}
+@property --lc-tw-hue-rotate{syntax:"*";inherits:false}
+@property --lc-tw-invert{syntax:"*";inherits:false}
+@property --lc-tw-opacity{syntax:"*";inherits:false}
+@property --lc-tw-saturate{syntax:"*";inherits:false}
+@property --lc-tw-sepia{syntax:"*";inherits:false}
+@property --lc-tw-drop-shadow{syntax:"*";inherits:false}
+@property --lc-tw-drop-shadow-color{syntax:"*";inherits:false}
+@property --lc-tw-drop-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}
+@property --lc-tw-drop-shadow-size{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-blur{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-brightness{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-contrast{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-grayscale{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-hue-rotate{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-invert{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-opacity{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-saturate{syntax:"*";inherits:false}
+@property --lc-tw-backdrop-sepia{syntax:"*";inherits:false}
+@property --lc-tw-duration{syntax:"*";inherits:false}
+@property --lc-tw-ease{syntax:"*";inherits:false}
+@property --lc-tw-content{syntax:"*";inherits:false;initial-value:""}
+@keyframes pulse{50%{opacity:.5}}
+@keyframes enter{0%{opacity:var(--lc-tw-enter-opacity,1);transform:translate3d(var(--lc-tw-enter-translate-x,0),var(--lc-tw-enter-translate-y,0),0)scale3d(var(--lc-tw-enter-scale,1),var(--lc-tw-enter-scale,1),var(--lc-tw-enter-scale,1))rotate(var(--lc-tw-enter-rotate,0));filter:blur(var(--lc-tw-enter-blur,0))}}
+@keyframes exit{to{opacity:var(--lc-tw-exit-opacity,1);transform:translate3d(var(--lc-tw-exit-translate-x,0),var(--lc-tw-exit-translate-y,0),0)scale3d(var(--lc-tw-exit-scale,1),var(--lc-tw-exit-scale,1),var(--lc-tw-exit-scale,1))rotate(var(--lc-tw-exit-rotate,0));filter:blur(var(--lc-tw-exit-blur,0))}}
+@keyframes accordion-down{0%{height:0}to{height:var(--lc-radix-accordion-content-height,var(--lc-bits-accordion-content-height,var(--lc-reka-accordion-content-height,var(--lc-kb-accordion-content-height,var(--lc-ngp-accordion-content-height,auto)))))}}
+@keyframes accordion-up{0%{height:var(--lc-radix-accordion-content-height,var(--lc-bits-accordion-content-height,var(--lc-reka-accordion-content-height,var(--lc-kb-accordion-content-height,var(--lc-ngp-accordion-content-height,auto)))))}to{height:0}}
+@keyframes caret-blink{0%,70%,to{opacity:1}20%,50%{opacity:0}}
